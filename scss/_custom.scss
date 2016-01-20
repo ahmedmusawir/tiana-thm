@@ -8,12 +8,13 @@ $tiana-gray: #242424;
 
 
 @import "bourbon/bourbon";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Bevan);
+// @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+// @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 
 html { 
  
@@ -60,14 +61,16 @@ body {
 }
 
 .navbar {
-	background-color: lighten( rgba( $steel, 1 ), 50% );
-	box-shadow: 3px 3px 8px $gray-light;
-	border-bottom: 1px solid $gray-light;
+	position: relative;
+	z-index: 1;
+	background-color: lighten( rgba( $steel, 1 ), 60% );
+	box-shadow: 1px 1px 8px $gray-light;
+	margin-bottom: 0;
+	font-family: 'Josefin Sans', sans-serif;
+
 
 	.navbar-brand {
 		color: darken( $gray-lighter, 10% );
-		font-size: 2rem;
-		font-weight: 300;
 	}
 
 	
@@ -105,21 +108,21 @@ body {
 			}
 			a {
 				color: darken( $gray-lighter, 45% );
-				font-size: 1.5rem;
-				font-weight: 300;
+				font-size: 1.7rem;
+				font-weight: 500;
 			}
 		}
 
 		.current-menu-item {
-			background-color: lighten( $oil, 10% );
+			// background-color: lighten( $oil, 40% );
 			// border: 1px solid yellow;
 
 			a {
-				background-color: lighten( $oil, 10% );
-				color: lighten( $tiana-primary, 10% );
+				// background-color: lighten( $gray, 40% );
+				color: darken( $tiana-primary, 0% );
 
 				&:hover {
-					background-color: lighten( $oil, 10% );
+					// background-color: lighten( $oil, 10% );
 				}
 			}
 		}
@@ -148,11 +151,47 @@ img {
 
 /**
  *
+ * Logo Style
+ *
+ */
+.logo {
+	position: relative;
+	z-index: 2;
+}
+
+/**
+ *
  * Page Header Style
  *
  */
 #pg-header {
-	margin-top: 50px;
+	position: relative;
+	z-index: -1;
+
+	.header-text-container {
+	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+			// box-shadow: 0px 0px 3px lighten( $tiana-gray, 20% );
+
+
+		position: absolute;
+		top: 110px;
+		left: 150px;
+
+		.header-text-box {
+			width: 350px;
+			height: 200px;
+			padding-left: 3rem;
+			padding-right: .5rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+
+			h4 {
+			// border: 1px solid $tiana-gray;
+				color: lighten( $tiana-gray, 20% );
+
+			}
+		}	
+	}
 } 
 
 /**
@@ -163,411 +202,34 @@ img {
 .header-form-section {
 	// border: 1px solid red;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 0rem;
 	background-color: $tiana-primary;
-}
 
-/**
- *
- * Front Page Styles
- *
- */
-.front-page-block-1 {
-	background-color: rgba( $steel, .85);
-	height: 95rem;
-
-	.front-page-header {
-		text-align: center;
-		padding-bottom: 10rem;
-		padding-top: 1rem;
-		// padding-top: 6rem;
-
-		img {
-			// border: 3px solid red;
+	.header-form-container {
+		.header-form {
+			// border: 1px solid red;
+			// padding-top: 2rem;
+			margin-top: -1.3rem;
 		}
-		h1 {
-			font-family: 'Bevan', cursive;
-			font-size: 9rem;
-			color: $silver;
-		}
-
-		h4 {
-			font-family: 'Vollkorn', serif;
-			font-size: 4rem;
-			color: $silver;
-
-			padding-top: 2rem;
-			padding-bottom: 3rem;
-
-			i {
-				color: lighten( $silver, 0%);
-			}
-		}
-
-		@media (max-width: 768px) {
-	    	h1 {
-	    		font-size: 5rem;
-	    	}	
-	    	h4 {
-	    		font-size: 3rem;
-	    	}
-	    }
-	}
-
-}
-
-/**
- *
- * Services Area
- *
- */
-
-
-.front-page-block-2 {
-	// background-color: rgba( darken( $brand-primary, 10% ), .9);
-
-
-	@include background(linear-gradient( rgba( $silver, .8 ), $brand-primary ) left repeat);
-
-
-
-	text-align: center;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
-	color: darken( $gray-lighter, 5% );
-
-	.service-box {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-
-		.service-header {
-			min-height: 15rem;
-			height: auto;
-
-			i {
-				// margin-bottom: .5rem;
-			}
-		}
-
-		.service-text {
-			// padding-top: 1rem;
-			// min-height: 150px;
-			font-size: 1.7rem;
-			font-weight: 400;
-
-		}
-
-		h2 {
-			font-size: 2.5rem;
-		}
-
-		a {
-			margin-top: 2rem;
-		}
-
-
-	}
-
-	#left {
-		color: darkblue;
-	}
-
-	#middle {
-		color: purple;
-	}
-
-	#right {
-		color: black;
-	}
-
-}
-
-/**
- *
- * Frontpage Slider 
- *
- */
-
-
-.front-page-block-3 {
-
-	background-color: rgba( darken( $oil, 8% ), 1);
-
-	.slider {
-		padding-top: 3rem;
-		margin-top: 3rem;
-
-		img {
-			width: 100%;
-		}
-
-		#fp-carousel {
-			// border: 2px solid red;
-			padding-top: 2rem;
-			padding-bottom: 1.5rem;
-		}
-	}
-
-}
-
-/**
- *
- * Featured Section
- *
- */
-
-
-.front-page-block-4 {
-	// background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
-	// -webkit-background-size: cover;
-	//   -moz-background-size: cover;
-	//   -o-background-size: cover;
-	//   background-size: cover;
-
-	color: lightgray;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-
-
-	.featured-box {
-
-		.featured-content {
-
-			text-align: center;
-			// background-color: rgba( darken( $oil, 10% ), .8);
-			@include background(linear-gradient( $oil, rgba( $oil, .8 ) ) left repeat);
-			// background-size: 0% 0%;
-			
-			img {
-				width: 100%;
-				@include transition(all 2.0s ease-in-out);
-
-			}
-
-			@include transition(all 1s ease-in-out);
-
-			&:hover {
-				// background-color: darken( $brand-primary, 0% );
-				// background-color: #1a82f7;
-				  // background: url(images/linear_bg_2.png);
-				  // background-repeat: repeat-x;
-
-				  /* Safari 4-5, Chrome 1-9 */
-				  // background-color: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(#be8706));
-
-				@include background(linear-gradient( $gray-light, $brand-primary ) left repeat);
-
-				color: black;
-
-				img {
-					@include transform(translateY(50px));
-					@include transform(scale(0.9) rotate(-3deg));
-					@include transform-origin(center top);
-					@include transform-style(preserve-3d);
-				}
-			}
-
-			// padding: .5rem;
-			margin-bottom: .5rem;
-
-				.featured-header {
-					min-height: 8rem;
-					height: auto;
-
-					i {
-						// margin-bottom: .5rem;
-					}
-				}
-
-				.featured-text {
-					// padding-top: 1rem;
-					// min-height: 150px;
-
-				}
-
-				h2 {
-					font-size: 2.5rem;
-				}
-
-				a {
-					margin-top: 2rem;
-					margin-bottom: 3rem;
-					background-color: transparent;
-					border: 2px solid $gray-light;
-
-					&:hover {
-						background-color: $oil;
-						border: 2px solid black;
-					}
-				}
-
-				p {
-					font-size: 1.8rem;
-					font-weight: 300;
-					padding: 1rem;
-					padding-right: 3rem;
-					padding-left: 3rem;
-				}
-
-
-			}
-
-	}
-
-
-}
-
-/**
- *
- * Frontpage Call Out Section
- *
- */
-
-
-.front-page-block-5 {
-
-	background-color: rgba( darken( $jet, 20% ), .5);
-	border: 1px solid gray;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-
-
-	.callout-box {
-
-		h2,h3 {
-			font-family: 'Bevan', cursive;
-			font-variant: small-caps;
-			text-align: center;
-			// text-transform: uppercase;
-			color: lighten( $brand-info, 25%);
-			// color: lighten( $steel, 50%);
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-		}
-
-		h2 {
-			font-size: 5rem;
+		.header-from-submit {
+			background-color: $tiana-gray;
+			color: $tiana-primary;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
 		}
 
 		h3 {
-			font-size: 3rem;
-		}
-
-		#interest {
-			color: lighten( $brand-primary, 0% );
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 2rem;
+			color: white;
+			margin-top: 0rem;
+			// padding-top: 1rem;
 			// border: 1px solid red;
+
 		}
-
-		@media (max-width: 480px) {
-	    	h2 {
-	    		font-size: 3rem;
-	    	}	
-	    	h3 {
-	    		font-size: 2rem;
-	    	}
-	    }
 	}
-
-
 }
-
-/**
- *
- * Navigation For UnderScore Only
- *
- */
-
-/*--------------------------------------------------------------
-5.2 Menus
---------------------------------------------------------------*/
-// .main-navigation {
-//     position: relative;
-//     float: left;
-//     width: 100%;
-//     display: block;
-//     clear: both;
-//     font-family: 'Lato', sans-serif;
-//     text-transform: uppercase;
-//     background: #313131;
-//     background: hsl(0, 0%, 19%);
-// }
-// .main-navigation ul {
-//     list-style: none;
-//     margin: 0;
-//     padding-left: 0;
-// }
-// .main-navigation li {
-//     float: left;
-//     position: relative;
-// }
-// .main-navigation a {
-//     display: block;
-//     padding: 1.3em 1em;
-//     font-size: 14px;
-//     font-size: 1.4rem;
-//     text-decoration: none;
-//     line-height: 1.3em;
-//     color: white;
-//     color: hsl(0, 0%, 100%);
-// }
-// .main-navigation ul ul {
-//     position: absolute;
-//     left: 0;
-//     z-index: 99999;
-//     display: none;
-//     float: left;
-//     padding: 0;
-//     background: #4d4d4d;
-//     background: hsl(0, 0%, 30%);
-// }
-// .main-navigation ul ul ul {
-//     left: 100%;
-//     top: 0;
-// }
-// .main-navigation ul ul a {
-//     width: 200px;
-// }
-// .main-navigation ul ul li {
-// }
-// .main-navigation li:hover > a {
-//     color: #fff;
-//     color: hsl(0, 0%, 100%);
-//     background: #4d4d4d;
-//     background: hsl(0, 0%, 30%);
-// }
-// .main-navigation ul ul :hover > a {
-// }
-// .main-navigation ul ul a:hover {
-//     background: #313131;
-//     background: hsl(0, 0%, 19%);
-// }
-// .main-navigation ul li:hover > ul {
-//     display: block;
-// }
-// .main-navigation .current_page_item > a,
-// .main-navigation .current-menu-item > a,
-// .main-navigation .current_page_item > a:hover,
-// .main-navigation .current-menu-item > a:hover {
-//     background: darken( $brand-primary, 10% );
-//     // background: white;
-//     color: yellow;
-//     // color: #313131;
-//     // color: hsl(0, 0%, 19%);
-// }
-
-// .main-navigation .current_page_ancestor {
-//     background: #4d4d4d;
-//     background: hsl(0, 0%, 30%);
-// }
-
-// .main-navigation ul ul .current_page_parent,
-// .main-navigation .current_page_parent .current_page_item > a {
-//     color: #fff;
-//     color: hsl(0, 0%, 100%);
-//     background: #313131;
-//     background: hsl(0, 0%, 19%);
-// } 
-    
 
 
 /**
@@ -831,116 +493,8 @@ img {
 	content: "\f040";
 	margin-right: 0.5em;
 }
-/**
- *
- * Home Properties Styles
- *
- */
 
-.property {
- 	// border: 1px solid yellow;
-
- 	.entry-header {
- 		// border: 2px dotted dodgerblue;
- 		h2 {
- 			padding-bottom: 1rem;
- 			padding-top: 1rem;
- 		}
-		.price-tag {
- 			color: darken( $gray-lighter, 15% );
- 			padding-right: .5rem;
- 			padding-bottom: .5rem;
- 		}
- 	}
- }
-
- /**
-  *
-  * Land index Styles
-  *
-  */
- .land {
- 	// border: 2px solid red;
-
- 	.entry-header {
- 		// border: 2px dotted dodgerblue;
- 		h2 {
- 			padding-bottom: 0rem;
- 			padding-top: 1rem;
- 		}
-
- 		.price-tag {
- 			color: darken( $gray-lighter, 15% );
- 			padding-right: .5rem;
- 			padding-bottom: .5rem;
- 		}
- 	}
- }
-
- /**
-  *
-  * Category Sold
-  *
-  */
- .category-sold {
-
- 	.entry-header {
- 		// border: 5px dotted yellow;
-		background-color: darken( #FF033E, 10% );
- 		
- 	}
- 	.entry-footer {
- 		color: darken( #FF033E, 10% );
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		font-size: 2rem;
-
- 	}
- }
-
- /**
-  *
-  * Category Pending
-  *
-  */
- .category-pending {
-
- 	.entry-header {
- 		// border: 5px dotted hotpink;
-		background-color: darken( #0070FF, 10% );
- 		
- 	}
- 	.entry-footer {
- 		color: darken( #0070FF, 10% );
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		font-size: 2rem;
-
- 	}
- }
-
- /**
-  *
-  * Category Active
-  *
-  */
- .category-active {
-
- 	.entry-header {
- 		// border: 5px dotted green;
-		background-color: darken( #47B200, 10% );
- 		
- 	}
- 	.entry-footer {
- 		color: darken( #47B200, 10% );
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		font-size: 2rem;
-
- 	}
- }
-
-
+ 
 /**
  *
  * Single Page w Sidebar
@@ -1197,7 +751,7 @@ img {
 
 .widget {
 
-	border: 4px solid lighten( $gray-light, 15%);
+	// border: 4px solid lighten( $gray-light, 15%);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	padding-top: 3rem;
@@ -1205,7 +759,9 @@ img {
 	padding-left: 2rem;
 	padding-right: 2rem;
 
-	background-color: rgba( lighten( $gray-light, 15% ), .7);
+	// background-color: rgba( lighten( $gray-light, 15% ), .7);
+	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+
 
 	
 
@@ -1213,22 +769,22 @@ img {
 		font-size: 3rem;
 		font-weight: 500;
 		font-variant: small-caps;
-		color: lighten( $gray-light, 40% );
+		color: lighten( $tiana-gray, 40% );
 		padding-bottom: 2rem;
 	}
 
 	.srp-post-content {
-		color: lighten( $gray-light, 35% );
+		color: lighten( $tiana-gray, 35% );
 	}
 
 	.custom-widget {
 		// border: 1px solid red;
 		h3 {
-		color: lighten( $brand-primary, 0% );
+		color: lighten( $tiana-gray, 0% );
 		text-align: center;
 		}
 		h4 {
-			color: lighten( $brand-primary, 20% );
+			color: lighten( $tiana-gray, 20% );
 			text-align: center;
 		}
 		img {
@@ -1264,7 +820,7 @@ img {
 			font-weight: 300;
 
 			a {
-				color: darken( $gray-lighter, 10%);
+				color: darken( $tiana-gray , 10%);
 				font-size: 2rem;
 				font-variant: small-caps;
 			}
@@ -1354,19 +910,12 @@ img {
 	}
 
 	.widget {
-		border: 0px solid red;
+		border: 1px solid red;
 		padding-right: .5rem;
 		padding-left: .5rem;
 
 		color: lighten(grey, 30%);
 		background-color: darken( $steel, 10% );
-
-		// @media screen and (min-width: 991px) {
-		// 	background-color: $charcoal;
-		// 	z-index: 1;
-		// 	position: relative;
-			
-		// }
 
 		.widget-title {
 			color: $gray-lighter;
