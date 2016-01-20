@@ -60,6 +60,19 @@ body {
     }
 }
 
+@media (max-width: 767px) {
+	.navbar-collapse {
+		// border: 1px solid red;
+		margin-top: 5rem;
+	}
+}
+
+/**
+ *
+ * Bootstrap Navigation
+ *
+ */
+
 .navbar {
 	position: relative;
 	z-index: 1;
@@ -72,7 +85,14 @@ body {
 	.navbar-brand {
 		color: darken( $gray-lighter, 10% );
 	}
+	.navbar-toggle {
+		border: 1px solid $tiana-primary;
+		.icon-bar {
+		color: $tiana-primary;
+		background-color: $tiana-primary;
 
+		}
+	}
 	
 
 	.dropdown-menu {
@@ -883,18 +903,20 @@ img {
 	}
 }
  
+
 /**
  *
  * Footer Styles
  *
  */
 
-.footer-main {
-	background-color: darken( $steel, 10% );
+#footer-main {
+	background-color: $oil;
 	
 	.copyright {
 		padding: 1rem;
-		background-color: $oil;
+		background-color: darken( $steel, 10% );
+
 
 		p {
 			color: $gray-light;
@@ -909,10 +931,39 @@ img {
 		}
 	}
 
-	.widget {
-		border: 1px solid red;
-		padding-right: .5rem;
-		padding-left: .5rem;
+	.footer-body {
+		padding-top: 3rem;
+
+		.footer-form {
+			padding-left: 3rem;
+			background-color: $oil;
+
+
+			h3 {
+				font-size: 4.5rem;
+			}
+			h4 {
+				font-size: 2.2rem;
+				font-weight: 300;
+				padding-bottom: 3rem;
+				// border: 1px solid red;
+			}
+			p {
+				padding-top: 2rem;
+			}
+
+			.footer-submit {
+				width: 100%;
+				height: 70px;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.widget-footer {
+		// padding-right: .5rem;
+		// padding-left: .5rem;
+		padding-left: 0;
 
 		color: lighten(grey, 30%);
 		background-color: darken( $steel, 10% );
@@ -920,12 +971,17 @@ img {
 		.widget-title {
 			color: $gray-lighter;
 			padding-bottom: 2rem;
+			padding-top: 5rem;
+		}
+		ul {
+			padding-left: 0;
 		}
 
 		li {
 			background-color: rgba( darken( $oil, 10% ), .5);
 			margin-bottom: .2rem;
 			padding: 1rem;
+			list-style: none;
 			@include transition(all 0.5s ease-in-out);
 
 			&:hover {
@@ -945,8 +1001,22 @@ img {
 			}
 		}
 	}
-}
 
+	#footer-menu {
+		// border: 1px solid red;
+		text-align: center;
+		li {
+			display: inline-block;
+			background-color: transparent;
+
+			a {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 1.5rem;
+				font-weight: 600;	
+			}
+		}
+	}
+}
 
 .acf-map {
 	width: 100%;

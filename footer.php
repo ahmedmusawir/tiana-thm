@@ -14,16 +14,16 @@
 
 <div class="footer-container">
 
-	<footer class="footer-main">
+	<footer id="footer-main" class="footer-main">
 
 	<section class="footer-body  container">
 		
 		<div class="row">
 		
 
-			<article class="img-box col-md-4">
+			<article class="img-box col-md-6">
 
-				<aside id="text-2" class="widget widget_text">
+				<aside id="text-2" class="widget-footer-container widget_text">
 
 					<?php 
 						if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
@@ -39,9 +39,9 @@
 			
 			</article>
 
-			<article class="img-box col-md-4">
+			<article class="img-box col-md-6">
 
-				<aside id="nav_menu-2" class="widget widget_nav_menu">
+				<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
 
 					<?php 
 
@@ -56,12 +56,14 @@
 			    </aside>
 
 			</article>
+ 
 
-			
+	</div> <!-- TOP 2 FOOTER WIDGET CONTAINER -->
+	<hr>
+	<div id="footer-menu" class="row">
+					<article class="img-box col-md-12">
 
-			<article class="img-box col-md-4">
-
-			    <aside id="recent-posts-2" class="widget widget_recent_entries">
+			    <aside id="recent-posts-2" class="widget-footer-container widget_recent_entries">
 
 			    	<?php 
 
@@ -76,14 +78,9 @@
 			   	</aside>
 			
 			</article>
+	</div> <!-- FOOTER MENU ENDS -->
 
-	
- 
-
-	</div>
-
-
-	</section>
+	</section> <!-- FOOTER BODY ENDS -->
 	<div id="copyright" class="copyright">
 		<p class="text-center">All Rights Reserved Moose Frame &copy; <?php echo date('Y'); ?>. SEO and Development by <a href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
 	</div>
