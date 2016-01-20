@@ -67,11 +67,16 @@
 
 	<div id="content" class="site-content">
 
+	<?php $page_header_image = get_field( 'page_header_image' ); ?>
 	
 	<header id="pg-header">
+
+	<?php if ( is_home() ) : ?>
 		<img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/tiana-header-img-1-noise-light.jpg" alt="tiana img">
-		<!-- <img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/tiana-header-img-1-noise.jpg" alt=""> -->
-		<!-- <img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/tiana-header-img-1-2.jpg" alt=""> -->
+	<?php else : ?>
+		<img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img">
+	<?php endif; ?>
+	
 		<div class="header-text-container">
 			<article class="header-text-box">
 				<h3>Get Paid to Be You!</h3>
