@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
@@ -30,15 +30,14 @@
 	<?php if ( has_post_thumbnail() ) : ?> 
 		
 		<div class="featured-img">
-			<a href="<?php the_permalink(); ?>" title=""><?php the_post_thumbnail( 'full', array('class' => 'img-responsive'));  ?></a>
-
+			<?php the_post_thumbnail( 'full', array('class' => 'img-responsive'));  ?>
 		</div>
 
 	<?php endif; ?>
 		
 		<article class="only-text">
 		<?php
-			the_excerpt( sprintf(
+			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'moose-frame' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )

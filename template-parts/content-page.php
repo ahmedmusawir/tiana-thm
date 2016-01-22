@@ -9,12 +9,14 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<article class="only-text">
+
 		<?php
 			the_content();
 
@@ -23,6 +25,8 @@
 				'after'  => '</div>',
 			) );
 		?>
+		
+		</article>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

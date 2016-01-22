@@ -13,8 +13,8 @@ $tiana-gray: #242424;
 // @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
 // @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-// @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 
 html { 
  
@@ -194,19 +194,18 @@ img {
 
 
 		position: absolute;
-		top: 110px;
+		top: 80px;
 		left: 150px;
 
 		.header-text-box {
 			width: 350px;
-			height: 200px;
+			height: 230px;
 			padding-left: 3rem;
 			padding-right: .5rem;
 			padding-top: 2rem;
 			padding-bottom: 2rem;
 
 			h4 {
-			// border: 1px solid $tiana-gray;
 				color: lighten( $tiana-gray, 20% );
 
 			}
@@ -331,7 +330,6 @@ img {
 	
 	background-color: rgba( darken( $gray-light, 0% ), .5);
 
-
 	.page-header {
 
 		padding-top: 3rem;
@@ -377,40 +375,48 @@ img {
 	// background-color: rgba( darken( $silver, 0% ), .9);
 	// border: 1px solid blue;
 
-	background-color: rgba( lighten( $gray-light, 50% ), .8);
-	padding: 1rem;
+	// background-color: rgba( lighten( $gray-light, 50% ), .8);
+	// padding: 1rem;
 	margin-bottom: 1rem;
+	margin-top: 5rem;
 	margin-right: 0rem;
 	margin-left: .15rem;
 
 	.entry-header {
-		background-color: rgba( darken( $gray-light, 50% ), .65);
-		box-shadow: 3px 3px 8px $gray-light;
+		@include background(radial-gradient( rgba( $ghost, .8 ), rgba( $tiana-primary, .9 ) ) left repeat);
+		// background-color: rgba( darken( $gray-light, 50% ), .65);
+		// box-shadow: 2px 2px 4px $gray-light;
 
-		margin-bottom: 2.5rem;
+		// margin-bottom: 2.5rem;
 		margin-left: 1.3rem;
 		margin-right: 1.3rem;
+		border: 1px solid lighten( $tiana-primary, 10% );
 
 
 
 		h1, h2 {
-			font-size: 3.5rem;
+			// font-family: 'Lora', serif;
+			font-family: 'Cabin', sans-serif;
+			font-size: 3.2rem;
 			font-variant: small-caps;
-			font-weight: 300;
-			padding-top: 2rem;
+			font-weight: 200;
+			padding-top: 0rem;
+			padding-bottom: 1rem;
 			padding-left: 2rem;
+			padding-right: 1rem;
 
 			a {
-				color: lighten( $gray-light, 20% );
+				color: lighten( $brand-primary, 20% );
 				text-decoration: none;
 				&:hover {
-					color: darken( $brand-primary, 10% );
+					color: lighten( $oil, 20% );
 				}
 			}
 
 
 		}
 		.entry-meta {
+			display: none;
 			padding-bottom: 1rem;
 			padding-left: 2rem;
 			color: $gray-lighter;
@@ -425,6 +431,8 @@ img {
 
 	.featured-img {
 		padding-bottom: 2rem;
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
 		
 		img {
 			@include transition(all 1.0s ease-in-out);
@@ -446,14 +454,19 @@ img {
 
 	.entry-content {
 		// border: 1px solid yellow;
-		th {
-			min-width: 120px;
-		}
 	}
 
 	.only-text {
-		margin-left: 1.3rem;
-		margin-right: 1.4rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		padding-top: 2rem;
+		p {
+			font-family: 'Poiret One', cursive;
+			font-size: 2rem;
+			font-variant: 300;
+			color: lighten( $tiana-gray, 55% );
+			// border: 1px solid red;	
+		}
 	}
 
 	.entry-footer {
@@ -522,18 +535,21 @@ img {
  */
 .single-page {
 
-	background-color: rgba( lighten( $gray-light, 45% ), .8);
+	// background-color: rgba( lighten( $gray-light, 45% ), .8);
 
 	h1, h2, h3, h4, h5 {
-		color: lighten( $gray-light, 5% );
+		color: lighten( $tiana-primary, 5% );
+		font-size: 3.5rem;
+		padding-left: 2.7rem;
+		padding-right: 2rem;
+		margin-top: 5rem;
 	}
 
-	.img-featured {
-		width: 100%;
-		height: auto;
-		padding-right: 0;
-		padding-left: 0;
+	.entry-meta {
+		display: none;
 	}
+
+
 
 	.entry-header {
 		h2 {
@@ -543,17 +559,40 @@ img {
 			color: darken( $brand-primary, 10% );
 			padding-bottom: 1rem;
 			padding-right: 2rem;
+			// border: 1px solid red;
 		}
 	}
 
 	.entry-content {
 
-		padding: 3rem;
-		padding-top: 5rem;
+		padding-left: 3rem;
+		padding-right: 3rem;
 		font-size: 2rem;
 		font-weight: 300;
+		// border: 1px solid red;
+
+		.featured-img {
+			width: 100%;
+			height: auto;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 3rem;
+			// border: 1px solid red;
+		}		
 
 	}
+	.only-text {
+		// padding-left: 1.5rem;
+		// padding-right: 1.5rem;
+		padding-top: 2rem;
+		p {
+			font-family: 'Poiret One', cursive;
+			font-size: 2rem;
+			font-variant: 300;
+			color: lighten( $tiana-gray, 55% );
+			// border: 1px solid red;	
+		}
+	}	
 
 }
 
@@ -644,124 +683,69 @@ img {
  */
 .sidebar {
 	padding-right: 0;
+	margin-top: 4rem;
 	// border: 1px solid red;
 
 
-// Widget icons
+	// Widget icons
 
-.widget_recent_comments ul {
-	li:before {
-		color: lighten( $gray-light, 40%);
-	}
-}
-
-.widget_archive ul {
-	li:before {
-		color: lighten( $gray-light, 40%);
-	}
-}
-
-.widget_categories ul {
-	li:before {
-		color: lighten( $gray-light, 40%);
-	}
-}
-
-.widget_pages ul, .widget_nav_menu ul {
-	li:before {
-		color: lighten( $gray-light, 40%);
-	}
-	.children, .sub-menu {
+	.widget_recent_comments ul {
 		li:before {
-		color: lighten( $gray-light, 40%);
+			color: lighten( $gray-light, 40%);
 		}
 	}
-	.children .children, .sub-menu .sub-menu {
+
+	.widget_archive ul {
 		li:before {
-		color: lighten( $gray-light, 40%);
+			color: lighten( $gray-light, 40%);
 		}
 	}
-}
 
-	@media (max-width: 768px) {
-   		
-	padding-left: 0;
-
-
-    }
-
- /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;    
-}
-
-/**
- *
- * Land & Property Single Page Style
- *	content-land-page.php
- *	content-property-page
- */
-
-.single-details {
-	// border: 3px solid dodgerblue;
-	padding-bottom: 3rem;
-	padding-top: 3rem;
-	background-color: rgba( lighten( $steel, 30% ), .8 );
-	font-size: 2rem;
-	color: darken( $gray-light, 10% );
-	h2 {
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		padding-bottom: 2rem;
-		
+	.widget_categories ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
 	}
 
-}
-.single-description {
-	// border: 3px solid yellow;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-
-	background-color: rgba( $smoke, .8 );
-	font-size: 1.8rem;
-	color: lighten( $gray, 5% );
-
-	h2 {
-		font-family: 'Bevan', cursive;
-		font-variant: small-caps;
-		padding-bottom: 2rem;
-		color: lighten( $gray, 10% );
-
+	.widget_pages ul, .widget_nav_menu ul {
+		li:before {
+			color: lighten( $gray-light, 40%);
+		}
+		.children, .sub-menu {
+			li:before {
+			color: lighten( $gray-light, 40%);
+			}
+		}
+		.children .children, .sub-menu .sub-menu {
+			li:before {
+			color: lighten( $gray-light, 40%);
+			}
+		}
 	}
 
-	p {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
+		@media (max-width: 768px) {
+	   		
+		padding-left: 0;
+
+
+	    }
+
+	 /* These are technically the same, but use both */
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+
+	  -ms-word-break: break-all;
+	  /* This is the dangerous one in WebKit, as it breaks things wherever */
+	  word-break: break-all;
+	  /* Instead use this non-standard one: */
+	  word-break: break-word;
+
+	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+	  -ms-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -webkit-hyphens: auto;
+	  hyphens: auto;    
 }
-.single-map {
-	border: 3px solid lighten( black, 25% );
-	padding-bottom: 3rem;
-	background-color: rgba( darken( $charcoal, 10% ), .4 );
-	padding-top: 3rem;
-	font-size: 2rem;
-}
-
-
-
-
 
 /**
  *
@@ -836,13 +820,26 @@ img {
 
 		li {
 			font-size: 1.5rem;
-			padding-top: 1rem;
+			padding: 1rem;
 			font-weight: 300;
+			@include transition(all 0.5s ease-in-out);
+
+			&:hover {
+					color: $gray-lighter;
+				background-color: $tiana-primary;
+			}			
 
 			a {
+				display: block;
+				// border: 1px solid red;
 				color: darken( $tiana-gray , 10%);
 				font-size: 2rem;
 				font-variant: small-caps;
+				&:hover {
+					text-decoration: none;
+					color: $gray-lighter;
+
+				}
 			}
 
 		}

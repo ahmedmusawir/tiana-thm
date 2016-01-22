@@ -4,7 +4,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -8140,13 +8141,13 @@ img {
   background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
   background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
   position: absolute;
-  top: 110px;
+  top: 80px;
   left: 150px;
 }
 
 #pg-header .header-text-container .header-text-box {
   width: 350px;
-  height: 200px;
+  height: 230px;
   padding-left: 3rem;
   padding-right: .5rem;
   padding-top: 2rem;
@@ -8290,9 +8291,8 @@ img {
  *
  */
 .blog-post {
-  background-color: rgba(247, 247, 247, 0.8);
-  padding: 1rem;
   margin-bottom: 1rem;
+  margin-top: 5rem;
   margin-right: 0rem;
   margin-left: .15rem;
   /**
@@ -8316,31 +8316,35 @@ img {
 }
 
 .blog-post .entry-header {
-  background-color: rgba(0, 0, 0, 0.65);
-  box-shadow: 3px 3px 8px #777777;
-  margin-bottom: 2.5rem;
+  background: -webkit-radial-gradient(rgba(250, 250, 250, 0.8), rgba(95, 197, 191, 0.9)) left repeat;
+  background: radial-gradient(rgba(250, 250, 250, 0.8), rgba(95, 197, 191, 0.9)) left repeat;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
+  border: 1px solid #84d3ce;
 }
 
 .blog-post .entry-header h1, .blog-post .entry-header h2 {
-  font-size: 3.5rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 3.2rem;
   font-variant: small-caps;
-  font-weight: 300;
-  padding-top: 2rem;
+  font-weight: 200;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
   padding-left: 2rem;
+  padding-right: 1rem;
 }
 
 .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
-  color: #aaaaaa;
+  color: #78acd9;
   text-decoration: none;
 }
 
 .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-  color: #286090;
+  color: #666666;
 }
 
 .blog-post .entry-header .entry-meta {
+  display: none;
   padding-bottom: 1rem;
   padding-left: 2rem;
   color: #eeeeee;
@@ -8352,6 +8356,8 @@ img {
 
 .blog-post .featured-img {
   padding-bottom: 2rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
 .blog-post .featured-img img {
@@ -8380,13 +8386,17 @@ img {
   margin-top: 3.5rem;
 }
 
-.blog-post .entry-content th {
-  min-width: 120px;
+.blog-post .only-text {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
 }
 
-.blog-post .only-text {
-  margin-left: 1.3rem;
-  margin-right: 1.4rem;
+.blog-post .only-text p {
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-variant: 300;
+  color: #b0b0b0;
 }
 
 .blog-post .entry-footer {
@@ -8428,19 +8438,16 @@ img {
  * Single Page w Sidebar
  *
  */
-.single-page {
-  background-color: rgba(234, 234, 234, 0.8);
-}
-
 .single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
-  color: #848484;
+  color: #72ccc6;
+  font-size: 3.5rem;
+  padding-left: 2.7rem;
+  padding-right: 2rem;
+  margin-top: 5rem;
 }
 
-.single-page .img-featured {
-  width: 100%;
-  height: auto;
-  padding-right: 0;
-  padding-left: 0;
+.single-page .entry-meta {
+  display: none;
 }
 
 .single-page .entry-header h2 {
@@ -8453,10 +8460,29 @@ img {
 }
 
 .single-page .entry-content {
-  padding: 3rem;
-  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   font-size: 2rem;
   font-weight: 300;
+}
+
+.single-page .entry-content .featured-img {
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 3rem;
+}
+
+.single-page .only-text {
+  padding-top: 2rem;
+}
+
+.single-page .only-text p {
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-variant: 300;
+  color: #b0b0b0;
 }
 
 /**
@@ -8539,6 +8565,7 @@ img {
  */
 .sidebar {
   padding-right: 0;
+  margin-top: 4rem;
   /* These are technically the same, but use both */
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -8582,54 +8609,6 @@ img {
   .sidebar {
     padding-left: 0;
   }
-}
-
-/**
- *
- * Land & Property Single Page Style
- *	content-land-page.php
- *	content-property-page
- */
-.single-details {
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  background-color: rgba(179, 179, 179, 0.8);
-  font-size: 2rem;
-  color: #5e5e5e;
-}
-
-.single-details h2 {
-  font-family: 'Bevan', cursive;
-  font-variant: small-caps;
-  padding-bottom: 2rem;
-}
-
-.single-description {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: rgba(238, 238, 238, 0.8);
-  font-size: 1.8rem;
-  color: #626262;
-}
-
-.single-description h2 {
-  font-family: 'Bevan', cursive;
-  font-variant: small-caps;
-  padding-bottom: 2rem;
-  color: #6f6f6f;
-}
-
-.single-description p {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.single-map {
-  border: 3px solid #404040;
-  padding-bottom: 3rem;
-  background-color: rgba(59, 59, 59, 0.4);
-  padding-top: 3rem;
-  font-size: 2rem;
 }
 
 /**
@@ -8708,14 +8687,27 @@ img {
 
 .widget ul li {
   font-size: 1.5rem;
-  padding-top: 1rem;
+  padding: 1rem;
   font-weight: 300;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget ul li:hover {
+  color: #eeeeee;
+  background-color: #5FC5BF;
 }
 
 .widget ul li a {
+  display: block;
   color: #0a0a0a;
   font-size: 2rem;
   font-variant: small-caps;
+}
+
+.widget ul li a:hover {
+  text-decoration: none;
+  color: #eeeeee;
 }
 
 .widget form {
