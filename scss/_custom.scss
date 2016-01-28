@@ -14,7 +14,8 @@ $tiana-gray: #242424;
 // @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
+// @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
 
 html { 
  
@@ -213,7 +214,7 @@ img {
 			@include transition(all 1.0s ease-in-out);
 
 			&:hover {
-				color: red;
+				color: darken( $tiana-primary, 20% );
 				// font-size: 3.2rem;
 				@include transition-property(transform);
 				@include transition-duration(1.0s);
@@ -251,7 +252,7 @@ img {
 		.header-text-box {
 
 			// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-			
+			font-family: 'Muli', sans-serif;
 			position: absolute;
 			top: -30px;
 			left: 0px;
@@ -427,6 +428,7 @@ img {
 	padding-bottom: 0rem;
 	background-color: $tiana-primary;
 
+
 	.header-form-container {
 		.header-form {
 			// border: 1px solid red;
@@ -442,7 +444,8 @@ img {
 		}
 
 		h3 {
-			font-family: 'Josefin Sans', sans-serif;
+			font-family: 'Muli', sans-serif;
+			// font-family: 'Josefin Sans', sans-serif;
 			font-size: 2rem;
 			color: white;
 			margin-top: 0rem;
@@ -598,9 +601,11 @@ img {
 
 		h1, h2 {
 			// font-family: 'Lora', serif;
-			font-family: 'Cabin', sans-serif;
+			// font-family: 'Cabin', sans-serif;
+			font-family: 'Muli', sans-serif;
+
 			font-size: 3.2rem;
-			font-variant: small-caps;
+			// font-variant: small-caps;
 			font-weight: 200;
 			padding-top: 0rem;
 			padding-bottom: 1rem;
@@ -796,6 +801,45 @@ img {
 		}
 	}	
 
+}
+
+/**
+ *
+ * Praise Block Styles
+ *
+ */
+.praise-block {
+	// border: 1px solid red;
+	margin-top: 4rem;
+	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+
+
+	img {
+		float: left;
+		padding-top: 5rem;
+	}
+
+	.praise-text {
+		// border: 1px solid blue;
+		// padding-left: 4rem;
+		p {
+			font-family: 'Poiret One', cursive;
+			font-size: 2rem;
+			font-weight: 300;
+			color: lighten( $tiana-gray, 55% );
+			padding: 2rem;
+			padding-top: 4rem;
+			// border: 1px solid red;	
+		}
+	}
+	.praise-title {
+		font-weight: 700;
+		font-size: 2rem;
+		font-variant: small-caps;
+		color: lighten( $tiana-gray, 35% );
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
 }
 
 /**
@@ -1137,6 +1181,14 @@ img {
 		.footer-form {
 			padding-left: 3rem;
 			background-color: $oil;
+	
+		iframe {
+			border: 10px solid red;
+			
+			img {
+				display: none;
+			}
+		}
 
 
 			h3 {

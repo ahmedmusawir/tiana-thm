@@ -5,7 +5,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -8155,7 +8155,7 @@ img {
 }
 
 .header-logo-social .header-social i:hover {
-  color: red;
+  color: #338b86;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
   -webkit-transition-duration: 1s;
@@ -8187,6 +8187,7 @@ img {
 }
 
 #front-pg-header .header-text-container .header-text-box {
+  font-family: 'Muli', sans-serif;
   position: absolute;
   top: -30px;
   left: 0px;
@@ -8364,7 +8365,7 @@ img {
 }
 
 .header-form-section .header-form-container h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 2rem;
   color: white;
   margin-top: 0rem;
@@ -8499,9 +8500,8 @@ img {
 }
 
 .blog-post .entry-header h1, .blog-post .entry-header h2 {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 3.2rem;
-  font-variant: small-caps;
   font-weight: 200;
   padding-top: 0rem;
   padding-bottom: 1rem;
@@ -8658,6 +8658,40 @@ img {
   font-size: 2rem;
   font-variant: 300;
   color: #b0b0b0;
+}
+
+/**
+ *
+ * Praise Block Styles
+ *
+ */
+.praise-block {
+  margin-top: 4rem;
+  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
+  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
+}
+
+.praise-block img {
+  float: left;
+  padding-top: 5rem;
+}
+
+.praise-block .praise-text p {
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #b0b0b0;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.praise-block .praise-title {
+  font-weight: 700;
+  font-size: 2rem;
+  font-variant: small-caps;
+  color: #7d7d7d;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /**
@@ -8929,6 +8963,14 @@ img {
 #footer-main .footer-body .footer-form {
   padding-left: 3rem;
   background-color: #333333;
+}
+
+#footer-main .footer-body .footer-form iframe {
+  border: 10px solid red;
+}
+
+#footer-main .footer-body .footer-form iframe img {
+  display: none;
 }
 
 #footer-main .footer-body .footer-form h3 {
