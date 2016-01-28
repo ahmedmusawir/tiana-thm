@@ -812,7 +812,21 @@ img {
 	// border: 1px solid red;
 	margin-top: 4rem;
 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+	@include transition(all 1.0s ease-in-out);
 
+	&:hover {
+		background-color: $tiana-gray;
+		
+		.praise-text {
+			p {
+				color: lighten( $tiana-primary, 35% );
+				
+			}
+		}
+		.praise-title {
+			color: white;
+		}
+	}
 
 	img {
 		float: left;
@@ -847,80 +861,89 @@ img {
  * Contact Page Styles
  *
  */
+
+.contact-header {
+	h1 {
+		font-size: 5rem;
+	}
+} 
 .contact-content {
 
-	background-color: rgba( lighten( $brand-primary, 30% ), .6);
-	// background-color: rgba( lighten( $gray-light, 45% ), .8);
-	// border: 1px solid red;
-	margin-bottom: 6rem;
-	color: darken( $oil, 20% );
-
-
-	.pg-header-txt {
-		text-align: center;
-		padding-bottom: 2rem;
-		padding-top: 8rem;
-
-		h2 {
-			text-transform: uppercase;
-			padding-bottom: 1rem;
-			font-weight: 200;
-			font-size: 5rem;
-		}
-		h4 {
-			font-weight: 200;
-		}
+	#wpcf7-f397-p9-o1 {
+		// background-color: rgba( lighten( $brand-primary, 30% ), .6);
+		// background-color: rgba( lighten( $gray-light, 45% ), .8);
+		// border: 1px solid red;
 	}
+	.contact-top-row {
+		// border: 1px solid red;
 
-	.container {
-		padding-bottom: 8rem;
-
-		.contact-header-txt {
-			padding-bottom: 4rem;
-			font-variant: small-caps;
-
-			h3 {
-				font-weight: 200;
-				font-size: 4rem;
-			}
-
+		h3 {
+			font-size: 4rem;
+			font-weight: 300;
 		}
 
-		.col-form {
-			// background-color: lighten( #e3e3e3, 5%);
-			padding: 3rem;
-		}
+		.contact-social {
+			// border: 1px solid blue;
+			padding-top: 4rem;
 
-		.col-content {
-			padding-bottom: 5rem;
-			padding: 3rem;
-				// border: 1px solid red;
+			li {
+				list-style: none;
+				padding: 2rem;
+				@include transition(all 1.0s ease-in-out);
 
 
-			.address-text {
-				padding-bottom: 3rem;
-				font-size: 2rem;
-				font-weight: 300;
-			}
+				// padding: 2rem;
+				height: 80px;
+				width: 80px;
+				background-color: $tiana-gray;
+				border-radius: 50%;
 
-			.contact-social {
-					padding-top: 3rem;
 
-				span {
-					padding-right: 3rem;
+				&:hover {
+
+				@include transition-property(transform);
+				@include transition-duration(1.0s);
+				@include transition-timing-function(ease-in);
+				@include transition-delay(0.5s);
+					background-color: $tiana-primary;
 
 					a {
-						color: darken( $brand-primary, 30%);
-
-						&:hover {
-							color: $smoke;
-						}
+						color: $tiana-gray;
 					}
 				}
+
+				a {
+					font-size: 2rem;
+					color: $tiana-primary;
+				}
+				
 			}
+			p {
+				font-size: 2.5rem;
+				color: $tiana-primary;
+				padding-top: 2rem;
+			}		
+		}
+	}	
+
+	.the-form {
+		// border: 2px solid blue;
+		background-color: lighten( $tiana-gray, 10% );
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		margin-bottom: 10rem;
+
+		.wpcf7-textarea {
+			height: 16rem;
+		}
+		.wpcf7-submit {
+			width: 20rem;
+			float: right;
 		}
 	}
+
 }
+
 
 /**
  *
@@ -1156,6 +1179,8 @@ img {
 
 #footer-main {
 	background-color: $oil;
+	margin-top: 4rem;
+	// border: 3px solid red;
 	
 	.copyright {
 		padding: 1rem;
