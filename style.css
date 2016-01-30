@@ -8671,18 +8671,45 @@ img {
   background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  padding-top: 3rem;
+  padding-right: 5rem;
+  padding-left: 3rem;
 }
 
-.praise-block:hover {
+.praise-block .no-image {
+  padding-left: 5rem;
+}
+
+.praise-block .icon-praise i {
+  color: #5FC5BF;
+}
+
+.praise-block .praise-title a {
+  color: #40b1aa;
+}
+
+.praise-block:hover, .praise-block:active {
   background-color: #242424;
 }
 
-.praise-block:hover .praise-text p {
+.praise-block:hover .icon-praise i, .praise-block:active .icon-praise i {
+  color: #eeeeee;
+}
+
+.praise-block:hover .praise-text p, .praise-block:active .praise-text p {
   color: #e2f4f3;
 }
 
-.praise-block:hover .praise-title {
+.praise-block:hover .praise-text h3, .praise-block:active .praise-text h3 {
   color: white;
+}
+
+.praise-block:hover .praise-title, .praise-block:active .praise-title {
+  color: white;
+}
+
+.praise-block:hover .praise-title a, .praise-block:active .praise-title a {
+  color: #5FC5BF;
 }
 
 .praise-block img {
@@ -8696,7 +8723,11 @@ img {
   font-weight: 300;
   color: #b0b0b0;
   padding: 2rem;
-  padding-top: 4rem;
+  padding-top: 1rem;
+}
+
+.praise-block .praise-text h3 {
+  color: #5fc5bf;
 }
 
 .praise-block .praise-title {
@@ -8717,27 +8748,35 @@ img {
   font-size: 5rem;
 }
 
-.contact-content .contact-top-row h3 {
+.entry-content .only-text {
+  padding-top: 0;
+}
+
+.entry-content .contact-top-row h3 {
   font-size: 4rem;
   font-weight: 300;
 }
 
-.contact-content .contact-top-row .contact-social {
+.entry-content .contact-top-row .contact-social {
   padding-top: 4rem;
 }
 
-.contact-content .contact-top-row .contact-social li {
+.entry-content .contact-top-row .contact-social li {
   list-style: none;
   padding: 2rem;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   background-color: #242424;
   border-radius: 50%;
 }
 
-.contact-content .contact-top-row .contact-social li:hover {
+.entry-content .contact-top-row .contact-social li i {
+  font-size: 2.9rem;
+}
+
+.entry-content .contact-top-row .contact-social li:hover {
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
   -webkit-transition-duration: 1s;
@@ -8749,33 +8788,34 @@ img {
   background-color: #5FC5BF;
 }
 
-.contact-content .contact-top-row .contact-social li:hover a {
+.entry-content .contact-top-row .contact-social li:hover a {
   color: #242424;
 }
 
-.contact-content .contact-top-row .contact-social li a {
+.entry-content .contact-top-row .contact-social li a {
   font-size: 2rem;
   color: #5FC5BF;
 }
 
-.contact-content .contact-top-row .contact-social p {
+.entry-content .contact-top-row .contact-social p {
   font-size: 2.5rem;
   color: #5FC5BF;
   padding-top: 2rem;
 }
 
-.contact-content .the-form {
+.entry-content .the-form {
   background-color: #3e3e3e;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
-.contact-content .the-form .wpcf7-textarea {
+.entry-content .the-form .wpcf7-textarea {
   height: 16rem;
 }
 
-.contact-content .the-form .wpcf7-submit {
+.entry-content .the-form .wpcf7-submit {
   width: 20rem;
   float: right;
 }
@@ -8967,7 +9007,7 @@ img {
 }
 
 #footer-main .copyright a:hover {
-  color: red;
+  color: #5FC5BF;
 }
 
 #footer-main .footer-body {
@@ -8979,12 +9019,17 @@ img {
   background-color: #333333;
 }
 
-#footer-main .footer-body .footer-form iframe {
-  border: 10px solid red;
+@media (min-width: 991px) and (max-width: 1200px) {
+  #footer-main .footer-body .footer-form .footer-social .row p {
+    font-size: 1.5rem;
+  }
+  #footer-main .footer-body .footer-form .footer-social .row i {
+    font-size: 1.9rem;
+  }
 }
 
-#footer-main .footer-body .footer-form iframe img {
-  display: none;
+#footer-main .footer-body .footer-form .footer-social p {
+  font-size: 2rem;
 }
 
 #footer-main .footer-body .footer-form h3 {
@@ -9010,7 +9055,6 @@ img {
 #footer-main .widget-footer {
   padding-left: 0;
   color: #cccccc;
-  background-color: #4d4d4d;
 }
 
 #footer-main .widget-footer .widget-title {

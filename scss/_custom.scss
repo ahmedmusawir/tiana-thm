@@ -813,18 +813,49 @@ img {
 	margin-top: 4rem;
 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 	@include transition(all 1.0s ease-in-out);
+	padding-top: 3rem;
+	padding-right: 5rem;
+	padding-left: 3rem;
 
-	&:hover {
+	.no-image {
+		padding-left: 5rem;
+	}
+
+	.icon-praise {
+		i {
+			color: $tiana-primary;
+		}
+	}
+
+	.praise-title {
+		a {
+			color: darken( $tiana-primary, 10% );
+		}
+	}
+
+	&:hover, &:active {
 		background-color: $tiana-gray;
+
+		.icon-praise {
+			i {
+				color: $gray-lighter;
+			}
+		}		
 		
 		.praise-text {
 			p {
 				color: lighten( $tiana-primary, 35% );
 				
 			}
+			h3 {
+				color: lighten( $gray-lighter, 10% );
+			}
 		}
 		.praise-title {
 			color: white;
+			a {
+				color: $tiana-primary;
+			}
 		}
 	}
 
@@ -842,9 +873,12 @@ img {
 			font-weight: 300;
 			color: lighten( $tiana-gray, 55% );
 			padding: 2rem;
-			padding-top: 4rem;
+			padding-top: 1rem;
 			// border: 1px solid red;	
 		}
+		h3 {
+			color: lighten( $tiana-primary, 0% );
+		}		
 	}
 	.praise-title {
 		font-weight: 700;
@@ -867,13 +901,13 @@ img {
 		font-size: 5rem;
 	}
 } 
-.contact-content {
+.entry-content {
 
-	#wpcf7-f397-p9-o1 {
-		// background-color: rgba( lighten( $brand-primary, 30% ), .6);
-		// background-color: rgba( lighten( $gray-light, 45% ), .8);
-		// border: 1px solid red;
+	// border: 1px solid green;
+	.only-text {
+		padding-top: 0;
 	}
+	
 	.contact-top-row {
 		// border: 1px solid red;
 
@@ -891,10 +925,14 @@ img {
 				padding: 2rem;
 				@include transition(all 1.0s ease-in-out);
 
+				i {
+					font-size: 2.9rem;
+				}
+
 
 				// padding: 2rem;
-				height: 80px;
-				width: 80px;
+				height: 70px;
+				width: 70px;
 				background-color: $tiana-gray;
 				border-radius: 50%;
 
@@ -932,6 +970,7 @@ img {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 		margin-bottom: 10rem;
+		margin-top: 5rem;
 
 		.wpcf7-textarea {
 			height: 16rem;
@@ -1195,7 +1234,7 @@ img {
 		a {
 			color: $gray-light;
 			&:hover {
-				color: red;
+				color: $tiana-primary;
 			}
 		}
 	}
@@ -1206,12 +1245,25 @@ img {
 		.footer-form {
 			padding-left: 3rem;
 			background-color: $oil;
+			// border: 1px solid yellow;
 	
-		iframe {
-			border: 10px solid red;
-			
-			img {
-				display: none;
+		.footer-social {
+
+			@media ( min-width: 991px ) and ( max-width: 1200px ) {
+				// border: 1px solid yellow;
+
+				.row {
+					p {
+						font-size: 1.5rem;
+					}
+					i {
+						font-size: 1.9rem;
+					}
+				}
+			}
+
+			p {
+				font-size: 2rem;
 			}
 		}
 
@@ -1240,10 +1292,11 @@ img {
 	.widget-footer {
 		// padding-right: .5rem;
 		// padding-left: .5rem;
+		// border: 1px solid yellow;
 		padding-left: 0;
 
 		color: lighten(grey, 30%);
-		background-color: darken( $steel, 10% );
+		// background-color: darken( $steel, 10% );
 
 		.widget-title {
 			color: $gray-lighter;

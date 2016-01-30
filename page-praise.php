@@ -19,6 +19,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
+
+
+// echo 'Client Des: <h1>' . $client_designation . '</h1>';	
 		 
 		$args = array(
 		    // 'category_name' => 'news',
@@ -34,24 +37,47 @@ get_header(); ?>
 		 
 		    <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 		 
+
+		 	<?php 
+
+		 		$client_designation = get_field( 'client_designation' ); 
+		 		$client_url = get_field( 'client_url' );
+		 		$client_name = get_field( 'client_name' );
+
+		  	?>
 		       
 		        <section class="praise-block clearfix">
+			     	<?php if ( has_post_thumbnail() ) : ?>
 
-			        <div class="col-md-2 col-lg-2">
-			        	<?php if ( has_post_thumbnail() ) : ?>
-		    				<?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
-						<?php endif; ?>
-			        </div>
 
-		         	<div class="col-md-10 col-md-10">
+				        <div class="col-md-2 col-lg-2">
+			    				<?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
+				        </div>
+
+			         	<div class="col-md-10 col-md-10">
+
+		         	<?php else : ; ?>
+		         	
+		         		<div class="col-md-12 col-md-12 no-image">
+
+					<?php endif; ?>
+
+
 		         		<article class="praise-text">
 		         		<!-- // Post data goes here. -->
-			        		<?php the_content(); ?>
+			         		<span class="icon-praise"><i class="fa fa-quote-left fa-2x"></i></span>
+			         		<h3><?php the_title(); ?></h3>
+				        		<?php the_content(); ?>
+			         		<span class="icon-praise pull-right"><i class="fa fa-quote-right fa-2x"></i></span>
+
 			         	</article>
 			         	<aside class="praise-title">
-			         		<?php the_title(); ?>
+			         		<a href="<?php echo $client_url; ?>" title="Tiana Praise" target="_blank"><?php echo $client_name; ?></a> | <?php echo $client_designation; ?>
 			         	</aside>
 		         	</div>
+
+
+
 		        	
 		        </section>
 		 
