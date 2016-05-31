@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: MooseFrame For Tiana
-Theme URI: http://www.htmlfivedev.com
-Description: This is the one built from scratch for TianaGustafson.com
-Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, responsive-layout, theme-options, translation-ready
-Author: Ahmed Rahat Musawir (Da Moose)
-Author URI: https://www.linkedin.com/in/ahmedmusawir
-License: GNU General Public License version 3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Version: 11.6
-
-All css files are placed in /css/ folder.
-If you want to add your own css code, please do it in /css/custom.css
-
-*/
 /* =WordPress Core
 -------------------------------------------------------------- */
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
@@ -3085,31 +3070,31 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #242424;
-  border-color: #171717; }
+  background-color: #666666;
+  border-color: #595959; }
   .btn-success:focus, .btn-success.focus {
     color: #fff;
-    background-color: #0b0b0b;
-    border-color: black; }
+    background-color: #4d4d4d;
+    border-color: #1a1a1a; }
   .btn-success:hover {
     color: #fff;
-    background-color: #0b0b0b;
-    border-color: black; }
+    background-color: #4d4d4d;
+    border-color: #3b3b3b; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #0b0b0b;
-    border-color: black; }
+    background-color: #4d4d4d;
+    border-color: #3b3b3b; }
     .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
       color: #fff;
-      background-color: black;
-      border-color: black; }
+      background-color: #3b3b3b;
+      border-color: #1a1a1a; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus {
-    background-color: #242424;
-    border-color: #171717; }
+    background-color: #666666;
+    border-color: #595959; }
   .btn-success .badge {
-    color: #242424;
+    color: #666666;
     background-color: #fff; }
 
 .btn-info {
@@ -4351,9 +4336,9 @@ a.label:hover, a.label:focus {
     background-color: #40b1aa; }
 
 .label-success {
-  background-color: #242424; }
+  background-color: #666666; }
   .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #0b0b0b; }
+    background-color: #4d4d4d; }
 
 .label-info {
   background-color: #5bc0de; }
@@ -4575,7 +4560,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-bar-success {
-  background-color: #242424; }
+  background-color: #666666; }
   .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5922,117 +5907,8 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-/**
- *
- * Pop Up Form
- *
- */
-#popup-form {
-  min-height: 600px;
-  width: 100%;
-  margin-top: 3rem;
-  padding-left: 0;
-  padding-right: 0;
-  border: 1rem solid #5FC5BF; }
-  #popup-form .form-container input {
-    width: 96%;
-    height: 5rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
-    #popup-form .form-container input::-webkit-input-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form .form-container input::-moz-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form .form-container input:-moz-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form .form-container input:-ms-input-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-  #popup-form .form-container #pop-submit {
-    font-size: 120%;
-    color: white;
-    background-color: #5FC5BF; }
-  #popup-form .form-container .infusion-field-input-container {
-    border: 3px solid #8a8a8a; }
-  #popup-form .popup-text {
-    text-align: center;
-    padding-right: .5rem;
-    padding-left: .5rem; }
-    #popup-form .popup-text h4 {
-      font-size: 2.2rem; }
-    #popup-form .popup-text p {
-      font-size: 1.5rem; }
-
-#myModal .modal-content {
-  background-color: transparent; }
-#myModal .modal-header {
-  padding: 15px;
-  border-bottom: 0px solid #e5e5e5; }
-#myModal .modal-footer {
-  padding: 15px;
-  text-align: center;
-  border-top: 0px solid #e5e5e5; }
-  #myModal .modal-footer .btn {
-    background-color: transparent; }
-
-.modal-backdrop.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80); }
-
-#popup-form-click {
-  min-height: 600px;
-  width: 100%;
-  margin-top: 3rem;
-  padding-left: 0;
-  padding-right: 0;
-  border: 1rem solid #5FC5BF; }
-  #popup-form-click .img-holder img {
-    width: 100%; }
-  #popup-form-click .form-container input {
-    width: 96%;
-    height: 5rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem; }
-    #popup-form-click .form-container input::-webkit-input-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form-click .form-container input::-moz-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form-click .form-container input:-moz-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-    #popup-form-click .form-container input:-ms-input-placeholder {
-      font-size: 1.8rem;
-      padding-left: 1rem;
-      text-align: center; }
-  #popup-form-click .form-container #pop-submit {
-    font-size: 120%;
-    color: white;
-    background-color: #5FC5BF; }
-  #popup-form-click .form-container .infusion-field-input-container {
-    border: 3px solid #8a8a8a; }
-  #popup-form-click .popup-text {
-    text-align: center;
-    padding-right: .5rem;
-    padding-left: .5rem;
-    color: #e6e6e6; }
-    #popup-form-click .popup-text h4 {
-      font-size: 2.2rem; }
-    #popup-form-click .popup-text p {
-      font-size: 1.5rem; }
+html {
+  display: none; }
 
 #content {
   font-family: 'Raleway', sans-serif;
@@ -6183,36 +6059,29 @@ img {
  *
  */
 .header-form-section {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   background-color: #5FC5BF;
-  border-top: 1rem solid #242424; }
-  .header-form-section .header-form-text {
-    text-align: center; }
-    .header-form-section .header-form-text h4 {
-      color: white;
-      font-size: 3rem;
-      font-weight: 500;
-      padding-left: 6rem; }
-      @media (max-width: 991px) {
-        .header-form-section .header-form-text h4 {
-          padding-bottom: 3rem;
-          padding-left: 0rem; } }
+  border-top: 2rem solid #242424; }
   .header-form-section .header-form-container {
-    padding-top: 2rem; }
-    .header-form-section .header-form-container .btn {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+    padding-top: 1rem; }
+    .header-form-section .header-form-container label {
+      color: white;
+      font-weight: 500;
+      padding-right: 3rem;
+      padding-top: 1.2rem; }
+    .header-form-section .header-form-container input {
+      margin-top: 1.2rem;
+      width: 60%; }
+      @media screen and (max-width: 480px) {
+        .header-form-section .header-form-container input {
+          width: 100%; } }
+    .header-form-section .header-form-container .infusion-submit input {
+      border: 2px solid white;
+      background-color: black;
+      color: white;
+      padding: .5rem;
       border-radius: 20px;
-      font-weight: 700;
-      font-size: 2.8rem;
-      color: #e6e6e6; }
-      @media (min-width: 992px) and (max-width: 1250px) {
-        .header-form-section .header-form-container .btn {
-          font-size: 2rem; } }
-      @media (max-width: 430px) {
-        .header-form-section .header-form-container .btn {
-          font-size: 1.5rem; } }
+      margin-bottom: 1.5rem; }
 
 /**
  *
@@ -6374,10 +6243,10 @@ img {
     padding-right: 1.5rem;
     padding-top: 2rem; }
     .blog-post .only-text p {
-      font-family: 'Muli', sans-serif;
+      font-family: 'Poiret One', cursive;
       font-size: 2rem;
       font-variant: 300;
-      color: #646464;
+      color: #b0b0b0;
       padding-top: 2rem; }
   .blog-post .entry-footer {
     padding-bottom: 2rem;
@@ -6440,10 +6309,10 @@ img {
 .single-page .only-text {
   padding-top: 2rem; }
   .single-page .only-text p {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 2rem;
-    font-variant: 400;
-    color: #4a4a4a; }
+    font-variant: 300;
+    color: #b0b0b0; }
 
 /**
  *
@@ -6482,10 +6351,10 @@ img {
     float: left;
     padding-top: 5rem; }
   .praise-block .praise-text p {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poiret One', cursive;
     font-size: 2rem;
     font-weight: 300;
-    color: #646464;
+    color: #b0b0b0;
     padding: 2rem;
     padding-top: 1rem; }
   .praise-block .praise-text h3 {
@@ -6567,8 +6436,6 @@ img {
   .entry-content .the-form .wpcf7-submit {
     width: 20rem;
     float: right; }
-  .entry-content .the-form p {
-    color: #9a9a9a; }
 
 /**
  *

@@ -7,6 +7,11 @@
  * @package Moose_Framework
  */
 
+// ACF VARIABLES 
+$contact_header_text = get_field('contact_header_text');
+$contact_social_icons = get_field('contact_social_icons');
+$contact_right_image = get_field('contact_right_image');
+
 ?>
 <!-- <h1>I am contact content</h1> -->
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
@@ -20,41 +25,18 @@
 
 			<section class="row contact-top-row">
 
-				<div class="col-sm-12 col-md-6 col-lg-6 -col-sm-push-6 col-md-push-6 col-lg-push-6  wow slideInRight" data-wow-duration="2s" data-wow-delay=".5s">
-					<img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/for-contact-page-final-7.jpg" alt="">
+				<div class="contact-image-container col-sm-12 col-md-6 col-lg-6 -col-sm-push-6 col-md-push-6 col-lg-push-6  wow slideInRight" data-wow-duration="2s" data-wow-delay=".5s">
+					<img class="img-responsive" src="<?php echo $contact_right_image; ?>" alt="">
 				</div>
 				
 				<div class="col-sm-12 col-md-6 col-lg-6 -col-sm-pull-6 col-md-pull-6 col-lg-pull-6 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s" >
 					
-					<h3>Do you speak Freedom? It's ok if you don't, I speak English too.</h3>
+					<!-- <h3>Do you speak Freedom? It's ok if you don't, I speak English too.</h3> -->
+					<h3><?php echo $contact_header_text; ?></h3>
 
 					<ul class="contact-social">
 
-						<div class="row">
-							<li class="col-md-3"><span class="icon-container"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></span></li>
-							<p class="col-md-9">Follow Me on Twitter	</p>	
-						</div>
-						<div class="row">
-
-							<li class="col-md-3"><span class="icon-container"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></span></li>
-							<p class="col-md-9">Like Me on Facebook</p>		
-						</div>
-						
-						<div class="row">
-							<!-- <span><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></span>				 -->
-							<li class="col-md-3"><span class="icon-container"><a href="#"><i class="fa fa-instagram fa-2x"></i></a></span></li>	
-							<p class="col-md-9">Follow Me on Instagram</p>	
-						</div>
-						<div class="row">
-
-							<li class="col-md-3"><span class="icon-container"><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></span></li>	
-							<p class="col-md-9">Follow Me on Pinterest</p>			
-						</div>
-						<div class="row">
-
-							<li class="col-md-3"><span class="icon-container"><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></span></li>	
-							<p class="col-md-9">Follow Me on Pinterest</p>			
-						</div>
+						<?php echo $contact_social_icons; ?>
 
 					</ul>
 

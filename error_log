@@ -1,0 +1,7 @@
+[29-Feb-2016 22:56:24] PHP Fatal error:  Call to undefined function  language_attributes() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/header.php on line 13
+[29-Feb-2016 22:56:24] PHP Fatal error:  Call to undefined function  add_action() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/functions.php on line 81
+[29-Feb-2016 22:56:25] PHP Fatal error:  Call to undefined function  is_active_sidebar() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/footer.php on line 29
+[29-Feb-2016 22:56:28] PHP Fatal error:  Call to undefined function  get_header() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/archive.php on line 10
+[29-Feb-2016 22:56:29] PHP Fatal error:  Call to undefined function  get_header() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/404.php on line 10
+[13-Mar-2016 16:31:07] PHP Fatal error:  Call to undefined function  add_action() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/functions.php on line 81
+[13-Mar-2016 16:31:07] PHP Fatal error:  Call to undefined function  is_active_sidebar() in /home7/tianast2/public_html/tianagustafson/wp-content/themes/tiana-thm/footer.php on line 29

@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages.
- *
+ * Template Name: Praise New 1
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -16,12 +16,23 @@ get_header(); ?>
 <section class="container">
 <!-- <h1>I am real praise</h1> -->
 	<div id="primary" class="content-area col-md-12 col-lg-12">
-	
+		<article class="genbook">
+
+		<!-- begin Genbook badge -->
+			<script src="https://www.genbook.com/bookings/booknowjstag.action?id=30315492&size=large"></script>
+			<noscript><a href="https://www.genbook.com/bookings/slot/reservation/30315492?bookingSourceId=1000"><img src="https://www.genbook.com/bookings/images/booknow-button-large.png" width="150" height="50" alt="Make an Online Appointment" border="0"/></a> <br/><a href="http://www.genbook.com" style="font-size:10px;">Online appointment scheduling for Professionals/Business</a></noscript>
+			<!-- end Genbook badge -->
+
+		
+			
+		</article>
 		<main id="main" class="site-main" role="main">
 
 		<?php
 
 
+// echo 'Client Des: <h1>' . $client_designation . '</h1>';	
+		 
 		$args = array(
 		    // 'category_name' => 'news',
 			'post_type'      => 'praises',
@@ -49,11 +60,11 @@ get_header(); ?>
 			     	<?php if ( has_post_thumbnail() ) : ?>
 
 
-				        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+				        <div class="col-md-2 col-lg-2">
 			    				<?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
 				        </div>
 
-			         	<div class="col-xs-12 col-sm-9 col-md-10 col-md-10">
+			         	<div class="col-md-10 col-md-10">
 
 		         	<?php else : ; ?>
 		         	

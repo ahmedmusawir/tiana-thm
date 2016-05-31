@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-<section class="container">
+<section class="container-fluid">
 	<div id="primary" class="content-area col-md-8 col-lg-8">
 		<main id="main" class="site-main" role="main">
 <!-- <h1><?php echo $client_designation; ?></h1>		 -->

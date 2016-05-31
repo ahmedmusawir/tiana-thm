@@ -106,8 +106,22 @@
 	<header id="front-pg-header">
 
 		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
+			<!-- <img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/tiana-header-img-1-noise-light-2.jpg" alt="tiana img"> -->
 			<img class="img-responsive" src="<?php echo $front_header_image; ?>" alt="tiana img">
 
+			<!-- <div class="header-text-container">
+				<article class="header-text-box">
+					<h3>Get Paid to Be You!</h3>
+					<h4>
+						Learn how to Create<br>
+						Online Systems that work<br>
+						for you FREEing you up <br>
+						to have more FUN <br>
+						and make more MONEY! <br><br>
+						<em>I can show you how!</em>
+					</h4>
+				</article>			
+			</div> -->
 			
 		<?php else : ?>
 			<img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img">
@@ -122,19 +136,56 @@
 				
 				<article class="header-form-text">
 
-				<h4>Join Thousands of other Entrepreneurs and Gain INSTANT ACCESS To Our Online Marketing Resource Bank.</h4>
+				<!-- <img class="img-responsive" src="http://tianagustafson.com/wp-content/uploads/2016/03/header-form-img.jpg" alt=""> -->
+				<h4>Join Thousands of other Entreprenurs to get instant access to our Online Marketing resources.</h4>
 					
 				</article>
 			</div>
 			<div class="col-md-4">
-				
+				<!-- <form class="form-inline header-form" role="form">
+				  <div class="form-group">
+				    <input type="email" class="form-control" id="email" placeholder="First Name">
+				  </div>
+				  <div class="form-group">
+				    <input type="password" class="form-control" id="pwd" placeholder="Email">
+				  </div>
+				  
+				  <button type="submit" class="btn btn-default header-from-submit">Get<br> it!</button>
+				</form> -->
 				<article class="form-container">
 
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-					  CLICK HERE TO SIGN UP!
-					</button>
-				
+					<a class="btn btn-success btn-lg center-block" href="#">CLICK HERE TO SIGN UP!</a>
+
+					<!-- INFUSION READ CODE -->
+					<!-- <form accept-charset="UTF-8" action="https://rp172.infusionsoft.com/app/form/process/79e728db504473c66e893dd67478ec93" class="infusion-form" method="POST">
+					    <input name="inf_form_xid" type="hidden" value="79e728db504473c66e893dd67478ec93" />
+					    <input name="inf_form_name" type="hidden" value="Sign Up on Website" />
+					    <input name="infusionsoft_version" type="hidden" value="1.50.0.37" />
+
+					    <div class="infusion-field row">
+						    <aside class="col-sm-3 col-md-4 col-lg-3">
+						        <label for="inf_field_FirstName">First Name *</label>
+						    </aside>    
+						    <aside class="col-sm-9 col-md-8 col-lg-9">
+						        <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text" />
+						    </aside>    
+					    </div>
+					    <div class="infusion-field row">
+						    <aside class="col-sm-3 col-md-4 col-lg-3">
+						        <label for="inf_field_Email">Email *</label>
+						    </aside>    
+						    <aside class="col-sm-9 col-md-8 col-lg-9">
+						        <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text" />
+						    </aside>    
+					    </div>
+					    <div class="infusion-submit row">
+						    <aside class="col-md-5 col-md-offset-2">
+						        <input type="submit" value="Yes I Want it" />
+						    </aside>
+					    </div>
+					</form>
+					<script type="text/javascript" src="https://rp172.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=6de7b0bc66d40391a6653e39e4657709"></script>
+				 -->
 				</article>
 				
 			</div>
@@ -142,71 +193,7 @@
 	</section>
 
 
-<!-- THE MODAL CODE -->
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-	      </div>
-	      <div class="modal-body">
 
-			<section id="popup-form-click" class="container">
-
-				<div class="img-holder">
-					<img class="img-responsive" src="/wp-content/uploads/2016/05/tiana-top.jpg" alt="">
-				</div>
-
-				<article class="popup-text">
-					
-					<h4>Ready to make more MONEY and have more FUN in your business?</h4>
-
-					<p>Join thousands of other entrepreneurs and get instant access to my online marketing guides, worksheets and freebies.</p>
-
-				</article>
-
-				<article class="form-container">
-
-					<!-- INFUSION READ CODE -->
-					<form accept-charset="UTF-8" action="https://rp172.infusionsoft.com/app/form/process/79e728db504473c66e893dd67478ec93" class="infusion-form" method="POST">
-					    <input name="inf_form_xid" type="hidden" value="79e728db504473c66e893dd67478ec93" />
-					    <input name="inf_form_name" type="hidden" value="Sign Up on Website" />
-					    <input name="infusionsoft_version" type="hidden" value="1.50.0.37" />
-
-					    <div class="infusion-field row">
-						   
-						    <aside class="col-sm-12 col-md-12 col-lg-12">
-						        <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name" type="text" />
-						   </aside>    
-					    </div>
-					    <div class="infusion-field row">
-						    
-						    <aside class="col-sm-12 col-md-12 col-lg-12">
-						        <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" placeholder="Email" type="text" />
-						    </aside>    
-					    </div>
-					    <div class="infusion-submit row">
-						    <aside class="col-md-12">
-						        <input id="pop-submit" type="submit" value="OF COURSE! LET'S DO THIS!!" />
-						    </aside>
-					    </div>
-					</form>
-					<script type="text/javascript" src="https://rp172.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=6de7b0bc66d40391a6653e39e4657709">
-					</script>
-				</article>
-				
-			</section>
-
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-	      </div>
-	    </div>
-	  </div>
-	</div>					
 
 
 

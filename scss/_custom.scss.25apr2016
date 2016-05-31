@@ -19,161 +19,10 @@ $tiana-gray: #242424;
 
 html { 
  
-	// display: none;
-
 }
 
 body {
 
-}
-
-/**
- *
- * Pop Up Form
- *
- */
-#popup-form {
-
-	min-height: 600px;
-	width: 100%;
-	margin-top: 3rem;
-	padding-left: 0;
-	padding-right: 0;
-
-	border: 1rem solid $tiana-primary;
-
-	.form-container {
-		// border: 1px solid red;
-		input {
-			width: 96%;
-			height: 5rem;
-			margin-bottom: 1rem;
-			margin-left: 1rem;
-			margin-right: 1rem;
-			// border: 1px solid red;
-
-			@include placeholder {
-			   // color: red;
-				font-size: 1.8rem;
-				padding-left: 1rem;
-				text-align: center;
-			}
-		}
-
-		#pop-submit {
-			font-size: 120%;
-			color: white;
-			background-color: $tiana-primary;
-			// border: 1px solid red;
-		}
-
-		.infusion-field-input-container {
-			border: 3px solid lighten( $tiana-gray, 40% );
-			
-		}
-	}
-
-	.popup-text {
-		text-align: center;
-		padding-right: .5rem;
-		padding-left: .5rem;
-
-		h4 {
-			font-size: 2.2rem;
-		}
-		p {
-			font-size: 1.5rem;
-		}
-	}
-
-
-}
-
-#myModal {
-	.modal-content {
-		background-color: transparent;
-
-	}
-	.modal-header {
-	    padding: 15px;
-	    border-bottom: 0px solid #e5e5e5;
-	}
-	.modal-footer {
-	    padding: 15px;
-	    text-align: center;
-	    border-top: 0px solid #e5e5e5;
-
-	    .btn {
-	    	background-color: transparent;
-	    }
-	}	
-}
-
-.modal-backdrop.in {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-}
-
-#popup-form-click {
-
-	min-height: 600px;
-	width: 100%;
-	margin-top: 3rem;
-	padding-left: 0;
-	padding-right: 0;
-
-	border: 1rem solid $tiana-primary;
-
-	.img-holder {
-		img {
-			width: 100%;
-		}
-	}
-
-	.form-container {
-		// border: 1px solid red;
-		input {
-			width: 96%;
-			height: 5rem;
-			margin-bottom: 1rem;
-			margin-left: 1rem;
-			margin-right: 1rem;
-			// border: 1px solid red;
-
-			@include placeholder {
-			   // color: red;
-				font-size: 1.8rem;
-				padding-left: 1rem;
-				text-align: center;
-			}
-		}
-
-		#pop-submit {
-			font-size: 120%;
-			color: white;
-			background-color: $tiana-primary;
-			// border: 1px solid red;
-		}
-
-		.infusion-field-input-container {
-			border: 3px solid lighten( $tiana-gray, 40% );
-			
-		}
-	}
-
-	.popup-text {
-		text-align: center;
-		padding-right: .5rem;
-		padding-left: .5rem;
-		color: darken( white, 10% );
-
-		h4 {
-			font-size: 2.2rem;
-		}
-		p {
-			font-size: 1.5rem;
-		}
-	}
 
 }
 
@@ -414,171 +263,173 @@ img {
 	.header-text-container {
 		// box-shadow: 0px 0px 3px lighten( $tiana-gray, 20% );
 
-		// .header-text-box {
-
-		// 	// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-		// 	font-family: 'Muli', sans-serif;
-		// 	position: absolute;
-		// 	top: -30px;
-		// 	left: 0px;
-
-		// 	width: 250px;
-		// 	height: 130px;
-		// 	padding-left: 3rem;
-		// 	padding-right: .5rem;
-		// 	padding-top: 2rem;
-		// 	padding-bottom: 2rem;
-
-		// 	h4 {
-		// 		color: lighten( $tiana-gray, 20% );
-		// 		font-size: 1rem;
-		// 	}
-		// 	h3 {
-		// 		font-size: 1.2rem;
-		// 	}
-				
-		// 	@media ( min-width: 500px ) {
-
-		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-		// 			position: absolute;
-		// 			top: 0px;
-		// 			left: 0px;
-
-		// 			width: 250px;
-		// 			height: 180px;
-		// 			padding-left: 3rem;
-		// 			padding-right: .5rem;
-		// 			padding-top: 2rem;
-		// 			padding-bottom: 2rem;
-
-		// 			h4 {
-		// 				color: lighten( $tiana-gray, 20% );
-		// 				font-size: 1.2rem;
-		// 			}
-		// 			h3 {
-		// 				font-size: 1.6rem;
-		// 			}				
-		// 	}	
-
-		// 	@media ( min-width: 700px ) {
-
-		// 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-			
-		// 		position: absolute;
-		// 		top: 20px;
-		// 		left: 70px;
-
-		// 		width: 250px;
-		// 		height: 190px;
-		// 		padding-left: 3rem;
-		// 		padding-right: .5rem;
-		// 		padding-top: .6rem;
-		// 		padding-bottom: 2rem;
-
-		// 		h4 {
-		// 			color: lighten( $tiana-gray, 20% );
-		// 			font-size: 1.5rem;
-		// 		}
-		// 		h3 {
-		// 			font-size: 2rem;
-		// 		}				
-		// 	}		
-
-		// 	@media ( min-width: 768px ) {
-			
-		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-		// 		position: absolute;
-		// 		top: 25px;
-		// 		left: 50px;
-		// 			width: 350px;
-		// 			height: 210px;
-		// 			padding-left: 5rem;
-		// 			padding-right: .5rem;
-		// 			padding-top: 2rem;
-		// 			padding-bottom: 2rem;
-
-		// 			h4 {
-		// 				color: lighten( $tiana-gray, 20% );
-						
-		// 			}
-		// 			h3 {
-		// 				font-size: 2.5rem;
-		// 			}
-				
-		// 	}
-
-		// 	@media ( min-width: 1100px ) {
-			
-		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-		// 		position: absolute;
-		// 		top: 80px;
-		// 		left: 150px;
-		// 			width: 350px;
-		// 			height: 230px;
-		// 			padding-left: 3rem;
-		// 			padding-right: .5rem;
-		// 			padding-top: 2rem;
-		// 			padding-bottom: 2rem;
-
-		// 			h4 {
-		// 				color: lighten( $tiana-gray, 20% );
-
-		// 			}
-				
-		// 	}
-
-		// 	@media ( min-width: 1400px ) {
-			
-		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-		// 		position: absolute;
-		// 		top: 80px;
-		// 		left: 150px;
-		// 			width: 450px;
-		// 			height: 300px;
-		// 			padding-left: 5rem;
-		// 			padding-right: .5rem;
-		// 			padding-top: 2rem;
-		// 			padding-bottom: 2rem;
-
-		// 			h4 {
-		// 				color: lighten( $tiana-gray, 20% );
-		// 				font-size: 2rem;
-
-		// 			}
-		// 			h3 {
-		// 				font-size: 3rem;
-		// 			}
-				
-		// 	}
-
-		// 	@media ( min-width: 1600px ) {
-	
-		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 		
-		// 		position: absolute;
-		// 		top: 120px;
-		// 		left: 250px;
-		// 			width: 550px;
-		// 			height: 330px;
-		// 			padding-left: 8rem;
-		// 			padding-right: .5rem;
-		// 			padding-top: 3rem;
-		// 			padding-bottom: 2rem;
 
-		// 			h4 {
-		// 				color: lighten( $tiana-gray, 20% );
-		// 				font-size: 2.5rem;
+		.header-text-box {
 
-		// 			}
-		// 			h3 {
-		// 				font-size: 3.5rem;
-		// 			}
-		// 	}
-		// }	
+			// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+			font-family: 'Muli', sans-serif;
+			position: absolute;
+			top: -30px;
+			left: 0px;
+
+			width: 250px;
+			height: 130px;
+			padding-left: 3rem;
+			padding-right: .5rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+
+			h4 {
+				color: lighten( $tiana-gray, 20% );
+				font-size: 1rem;
+			}
+			h3 {
+				font-size: 1.2rem;
+			}
+				
+			@media ( min-width: 500px ) {
+
+				@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+				
+					position: absolute;
+					top: 0px;
+					left: 0px;
+
+					width: 250px;
+					height: 180px;
+					padding-left: 3rem;
+					padding-right: .5rem;
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+
+					h4 {
+						color: lighten( $tiana-gray, 20% );
+						font-size: 1.2rem;
+					}
+					h3 {
+						font-size: 1.6rem;
+					}				
+			}	
+
+			@media ( min-width: 700px ) {
+
+			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+			
+				position: absolute;
+				top: 20px;
+				left: 70px;
+
+				width: 250px;
+				height: 190px;
+				padding-left: 3rem;
+				padding-right: .5rem;
+				padding-top: .6rem;
+				padding-bottom: 2rem;
+
+				h4 {
+					color: lighten( $tiana-gray, 20% );
+					font-size: 1.5rem;
+				}
+				h3 {
+					font-size: 2rem;
+				}				
+			}		
+
+			@media ( min-width: 768px ) {
+			
+				@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+				
+				position: absolute;
+				top: 25px;
+				left: 50px;
+					width: 350px;
+					height: 210px;
+					padding-left: 5rem;
+					padding-right: .5rem;
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+
+					h4 {
+						color: lighten( $tiana-gray, 20% );
+						
+					}
+					h3 {
+						font-size: 2.5rem;
+					}
+				
+			}
+
+			@media ( min-width: 1100px ) {
+			
+				@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+				
+				position: absolute;
+				top: 80px;
+				left: 150px;
+					width: 350px;
+					height: 230px;
+					padding-left: 3rem;
+					padding-right: .5rem;
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+
+					h4 {
+						color: lighten( $tiana-gray, 20% );
+
+					}
+				
+			}
+
+			@media ( min-width: 1400px ) {
+			
+				@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+				
+				position: absolute;
+				top: 80px;
+				left: 150px;
+					width: 450px;
+					height: 300px;
+					padding-left: 5rem;
+					padding-right: .5rem;
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+
+					h4 {
+						color: lighten( $tiana-gray, 20% );
+						font-size: 2rem;
+
+					}
+					h3 {
+						font-size: 3rem;
+					}
+				
+			}
+
+			@media ( min-width: 1600px ) {
+	
+				@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		
+				position: absolute;
+				top: 120px;
+				left: 250px;
+					width: 550px;
+					height: 330px;
+					padding-left: 8rem;
+					padding-right: .5rem;
+					padding-top: 3rem;
+					padding-bottom: 2rem;
+
+					h4 {
+						color: lighten( $tiana-gray, 20% );
+						font-size: 2.5rem;
+
+					}
+					h3 {
+						font-size: 3.5rem;
+					}
+			}
+		}	
 	}
 } 
 
@@ -589,81 +440,40 @@ img {
  */
 .header-form-section {
 	padding-top: 2rem;
-	padding-bottom: 3rem;
+	padding-bottom: 0rem;
 	background-color: $tiana-primary;
-	border-top: 1rem solid $tiana-gray;
+	border-top: 2rem solid $tiana-gray;
 	// height: 21.5rem;
 
 	.header-form-text {
-		
-		text-align: center;
-
-		h4 {
-			color: white;
-			font-size: 3rem;
-			font-weight: 500;
-			padding-left: 6rem;
-
-			@media ( max-width: 991px ) {
-				padding-bottom: 3rem;
-				padding-left: 0rem;
-			}
-
-		}
+		// border: 1px solid red;
 	}
 
 
 	.header-form-container {
-	
-		padding-top: 2rem;
-
-		.btn {
-			padding-top: 3rem;
-			padding-bottom: 3rem;
-			border-radius: 20px;
-			font-weight: 700;
-			font-size: 2.8rem;
-			color: darken( white, 10% );
-			// color: darken( white, 10% );
-
-			@media ( min-width: 992px ) and ( max-width: 1250px ) {
-
-				font-size: 2rem;
-			}
-
-			@media ( max-width: 430px ) {
-
-				font-size: 1.5rem;
-			}
+		.header-form {
+			border: 1px solid red;
+			// padding-top: 2rem;
+			margin-top: -1.3rem;
+		}
+		.header-from-submit {
+			background-color: $tiana-gray;
+			color: $tiana-primary;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
 		}
 
+		h3 {
+			font-family: 'Muli', sans-serif;
+			// font-family: 'Josefin Sans', sans-serif;
+			font-size: 2rem;
+			color: white;
+			margin-top: 0rem;
+			// padding-top: 1rem;
+			// border: 1px solid red;
 
-		// label {
-		// 	color: white;
-		// 	font-weight: 500;
-		// 	padding-right: 3rem;
-		// 	padding-top: 1.2rem;
-
-		// 	@media screen and ( max-width: 400px ) {
-		// 	}			
-		// }
-		// input {
-		// 	margin-top: 1.2rem;
-		// 	width: 60%;
-		// 	@media screen and ( max-width: 480px ) {
-		// 		width: 100%;
-		// 	}	
-		// }
-		// .infusion-submit {
-		// 	input {
-		// 		border: 2px solid white;
-		// 		background-color: black;
-		// 		color: white;
-		// 		padding: .5rem;
-		// 		border-radius: 20px;
-		// 		margin-bottom: 1.5rem;
-		// 	}
-		// }
+		}
 	}
 }
 
@@ -851,10 +661,11 @@ img {
 		padding-bottom: 2rem;
 		padding-left: 1.3rem;
 		padding-right: 1.3rem;
-		
+
 		img {
-			@include transition(all 1.0s ease-in-out);
+	
 			width: 100%;
+			@include transition(all 1.0s ease-in-out);
 
 			&:hover {
 				@include transform(translateY(0px));
@@ -880,11 +691,10 @@ img {
 		padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			// font-family: 'Poiret One', cursive;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Poiret One', cursive;
 			font-size: 2rem;
 			font-variant: 300;
-			color: lighten( $tiana-gray, 25% );
+			color: lighten( $tiana-gray, 55% );
 			padding-top: 2rem;
 			// border: 1px solid red;	
 		}
@@ -1007,11 +817,10 @@ img {
 		// padding-right: 1.5rem;
 		padding-top: 2rem;
 		p {
-			// font-family: 'Poiret One', cursive;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Poiret One', cursive;
 			font-size: 2rem;
-			font-variant: 400;
-			color: lighten( $tiana-gray, 15% );
+			font-variant: 300;
+			color: lighten( $tiana-gray, 55% );
 			// border: 1px solid red;	
 		}
 	}	
@@ -1083,11 +892,10 @@ img {
 		// border: 1px solid blue;
 		// padding-left: 4rem;
 		p {
-			// font-family: 'Poiret One', cursive;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Poiret One', cursive;
 			font-size: 2rem;
 			font-weight: 300;
-			color: lighten( $tiana-gray, 25% );
+			color: lighten( $tiana-gray, 55% );
 			padding: 2rem;
 			padding-top: 1rem;
 			// border: 1px solid red;	
@@ -1206,9 +1014,6 @@ img {
 		.wpcf7-submit {
 			width: 20rem;
 			float: right;
-		}
-		p {
-			color: lighten( gray, 10% );
 		}
 	}
 
