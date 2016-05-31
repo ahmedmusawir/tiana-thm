@@ -5922,6 +5922,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  font-family: 'Muli', sans-serif; }
+
 /**
  *
  * Pop Up Form
@@ -6100,6 +6103,9 @@ button.close {
     font-weight: 500; }
     .navbar #menu-menu-1 li a:hover {
       color: #5FC5BF; }
+    @media (min-width: 1200px) {
+      .navbar #menu-menu-1 li a {
+        font-size: 2.5rem; } }
   .navbar #menu-menu-1 .current-menu-item a {
     color: #5fc5bf; }
 
@@ -6126,17 +6132,20 @@ img {
 .header-logo-social {
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  .header-logo-social .logo {
-    position: fixed;
-    z-index: 2; }
+  @media (min-width: 1100px) {
+    .header-logo-social .logo {
+      width: 45%; } }
+  @media (min-width: 400px) and (max-width: 767px) {
+    .header-logo-social .logo {
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      width: 65%; } }
   .header-logo-social .header-social {
     padding-top: .5rem; }
     @media (min-width: 480px) {
       .header-logo-social .header-social {
         margin-right: -1.8rem; } }
-    @media (max-width: 410px) {
-      .header-logo-social .header-social {
-        display: none; } }
     .header-logo-social .header-social li {
       display: inline-block; }
     .header-logo-social .header-social i {
@@ -6166,6 +6175,9 @@ img {
           padding-left: 1rem;
           padding-right: 0rem;
           padding-bottom: 1rem; } }
+      @media (min-width: 1200px) {
+        .header-logo-social .header-social i {
+          font-size: 3.5rem; } }
 
 /**
  *
@@ -6579,18 +6591,9 @@ img {
   padding-right: 0;
   margin-top: 4rem;
   /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
   /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
   /* Instead use this non-standard one: */
-  word-break: break-word;
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto; }
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
   .sidebar .widget_recent_comments ul li:before {
     color: #dddddd; }
   .sidebar .widget_archive ul li:before {
@@ -6620,7 +6623,8 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
   background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
-  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat; }
+  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(95, 197, 191, 0.5)) left repeat;
+  font-family: 'Muli', sans-serif; }
   .widget .widget-title {
     font-size: 3rem;
     font-weight: 500;

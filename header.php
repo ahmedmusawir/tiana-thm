@@ -36,17 +36,19 @@
 			<style type="text/css" media="screen">
 				
 				.header-logo-social {
-					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");
+					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg");
+					/*background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");*/
 				}
 				.navbar {
-					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");
+					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg");
+					/*background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");*/
 				}
 
 			</style>
-			<div class="logo-container col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+			<div class="logo-container col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
 	        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo $siteLogo;  ?>" alt=""></a>
 	      	</div>
-	      	<div class="header-social-container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	      	<div class="header-social-container hidden-xs col-sm-6 col-md-6 col-lg-6">
 	      		<ul class="header-social pull-right">
 					<li><a target="_blank" href="https://www.facebook.com/tianagustafson/?fref=ts"><i class="fa fa-facebook fa-2x"></i></a></li>				
 					<li><a target="_blank" href="https://www.instagram.com/freedom_planner/"><i class="fa fa-instagram fa-2x"></i></a></li>				
