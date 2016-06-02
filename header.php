@@ -49,7 +49,7 @@
 			            <span class="icon-bar"></span>
 			        </button>
 			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="http://tiana/wp-content/uploads/2016/01/TianaGustafsonLogo.png" alt=""></a> -->
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="logo-text"><span class="tiana-txt">TIANA</span> GUSTAFSON  |  firefly media</span></a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="logo-text"><span class="tiana-txt">TIANA</span> GUSTAFSON  <span class="bar">|</span>  <span class="firefly">firefly media</span></span></a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -94,7 +94,7 @@
 				<article class="header-text-box">
 					<!-- <img class="header-txt-img img-responsive" src="/wp-content/uploads/2016/06/header-text-img.jpg" alt=""> -->
 
-					<h3>ONLINE MARKETING MAKE EASY.</h3>
+					<h3>ONLINE MARKETING MADE EASY.</h3>
 					<h4>
 						Join Thousands of other Entrepreneurs and get
 						Instant Access to our Online Marketing Resources.
@@ -102,7 +102,7 @@
 
 					<article class="header-btn-container block-center">
 					
-						<button type="button" class="btn btn-success btn-lg " data-toggle="modal" data-target="#myModal">
+						<button type="button" class="btn btn-success btn-lg " data-toggle="modal" data-target="#myModal-header">
 						  CLICK HERE TO SIGN UP!
 						</button>
 				
@@ -118,31 +118,7 @@
 	
 
 	</header>
-<!-- 	<section class="header-form-section">
 
-		<div class="header-form-container container-fluid">
-			<div class="col-md-8">
-				
-				<article class="header-form-text">
-
-				<h4>Join Thousands of other Entrepreneurs and Gain INSTANT ACCESS To Our Online Marketing Resource Bank.</h4>
-					
-				</article>
-			</div>
-			<div class="col-md-4">
-				
-				<article class="form-container">
-					
-					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-					  CLICK HERE TO SIGN UP!
-					</button>
-				
-				</article>
-				
-			</div>
-			
-	</section>
- -->
 
 <!-- THE MODAL CODE -->
 	<!-- Modal -->
@@ -152,6 +128,75 @@
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+
+			<section id="popup-form-click" class="container">
+
+				<div class="img-holder">
+					<img class="img-responsive" src="/wp-content/uploads/2016/05/tiana-top.jpg" alt="">
+				</div>
+
+				<article class="popup-text">
+					
+					<h4>Ready to make more MONEY and have more FUN in your business?</h4>
+
+					<p>Join thousands of other entrepreneurs and get instant access to my online marketing guides, worksheets and freebies.</p>
+
+				</article>
+
+				<article class="form-container">
+
+					<!-- INFUSION READ CODE -->
+					<form class="form" accept-charset="UTF-8" action="https://rp172.infusionsoft.com/app/form/process/8e7e8155679d72f01f3ee0775a3bd593" class="infusion-form" method="POST">
+					    <input name="inf_form_xid" type="hidden" value="8e7e8155679d72f01f3ee0775a3bd593" />
+					    <input name="inf_form_name" type="hidden" value="Free Marketing Worksheet" />
+					    <input name="infusionsoft_version" type="hidden" value="1.53.0.67" />
+					    <div class="infusion-field form-group">
+					        <label for="inf_field_FirstName">First Name *</label>
+					        <input class="infusion-field-input-container" id="inf_field_FirstName" name="inf_field_FirstName" type="text" />
+					    </div>
+					    <div class="infusion-field form-group">
+					        <label for="inf_field_Email">Valid Email *</label>
+					        <input class="infusion-field-input-container" id="inf_field_Email" name="inf_field_Email" type="text" />
+					    </div>
+					    <div class="infusion-field checkbox">
+					        <!-- <span class="infusion-option"> -->
+
+					            <label for="inf_option_SignUpOnMyInspireList">
+					           		<input checked="checked" id="inf_option_SignUpOnMyInspireList" name="inf_option_SignUpOnMyInspireList" type="checkbox" value="223" />
+					            	Sign Up On My Inspire List
+					            </label>
+					        <!-- </span> -->
+					    </div>
+					    <div class="infusion-submit">
+					        <input type="submit" value="Sign Up!" />
+					    </div>
+					</form>
+					<script type="text/javascript" src="https://rp172.infusionsoft.com/app/webTracking/getTrackingCode?trackingId=6de7b0bc66d40391a6653e39e4657709"></script>
+
+				</article>
+				
+			</section>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>					
+
+
+<!-- THE MODAL CODE -->
+	<!-- Modal -->
+	<div class="modal fade" id="myModal-header" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel"> </h4>
 	      </div>
 	      <div class="modal-body">
 
@@ -209,13 +254,6 @@
 	    </div>
 	  </div>
 	</div>					
-
-
-
-
-
-
-
 
 
 

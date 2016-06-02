@@ -5980,11 +5980,31 @@ body {
 #myModal .modal-header {
   padding: 15px;
   border-bottom: 0px solid #e5e5e5; }
+#myModal .modal-body .infusion-field {
+  text-align: center; }
+  #myModal .modal-body .infusion-field label {
+    color: white; }
+#myModal .modal-body .infusion-submit {
+  margin-top: 2rem; }
 #myModal .modal-footer {
   padding: 15px;
   text-align: center;
   border-top: 0px solid #e5e5e5; }
   #myModal .modal-footer .btn {
+    background-color: transparent;
+    border-bottom: 2px solid #e5e5e5; }
+
+#myModal-header .modal-content {
+  background: -webkit-linear-gradient(#84d3ce, rgba(128, 128, 128, 0.7)) left repeat;
+  background: linear-gradient(#84d3ce, rgba(128, 128, 128, 0.7)) left repeat; }
+#myModal-header .modal-header {
+  padding: 15px;
+  border-bottom: 0px solid #e5e5e5; }
+#myModal-header .modal-footer {
+  padding: 15px;
+  text-align: center;
+  border-top: 0px solid #e5e5e5; }
+  #myModal-header .modal-footer .btn {
     background-color: transparent;
     border-bottom: 2px solid #e5e5e5; }
 
@@ -6076,6 +6096,8 @@ body {
   margin: 0 -10px; }
 
 .navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #383D66;
   box-shadow: 2px 2px 8px #777777;
   margin-bottom: 0;
@@ -6085,11 +6107,27 @@ body {
     @media (max-width: 360px) {
       .navbar .navbar-brand {
         font-size: 1.5rem; } }
+    .navbar .navbar-brand .logo-text {
+      font-size: 2.7rem;
+      font-weight: 600; }
+      .navbar .navbar-brand .logo-text .tiana-txt {
+        color: #5FC5BF; }
+        .navbar .navbar-brand .logo-text .tiana-txt:hover {
+          color: #aae0dd; }
+      .navbar .navbar-brand .logo-text .firefly {
+        font-weight: 400;
+        font-size: 2.3rem;
+        color: #b3b3b3; }
+      .navbar .navbar-brand .logo-text .bar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-weight: 200;
+        font-size: 3rem; }
   .navbar .navbar-toggle {
-    border: 1px solid #383D66; }
+    border: 3px solid #aae0dd; }
     .navbar .navbar-toggle .icon-bar {
-      color: #383D66;
-      background-color: #383D66; }
+      color: white;
+      background-color: white; }
   .navbar .dropdown-menu {
     background-color: #101010; }
     .navbar .dropdown-menu .current-menu-item a {
@@ -6207,7 +6245,8 @@ img {
     padding-bottom: 2rem; }
     #front-pg-header .header-text-container .header-text-box h4 {
       color: #383d66;
-      font-style: italic; }
+      font-style: italic;
+      font-weight: 200; }
     #front-pg-header .header-text-container .header-text-box h3 {
       color: #4a5187;
       font-size: 1.2rem;
@@ -6254,7 +6293,7 @@ img {
           color: #575757;
           font-size: 1.2rem; }
         #front-pg-header .header-text-container .header-text-box h3 {
-          font-size: 1.6rem; } }
+          font-size: 1.3rem; } }
     @media (min-width: 500px) {
       #front-pg-header .header-text-container .header-text-box {
         position: absolute;
@@ -6323,7 +6362,7 @@ img {
       #front-pg-header .header-text-container .header-text-box {
         position: absolute;
         top: 80px;
-        left: 150px;
+        left: 20px;
         width: 50%;
         padding-left: 3rem;
         padding-right: .5rem;
@@ -6489,10 +6528,10 @@ img {
       padding-left: 2rem;
       padding-right: 1rem; }
       .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
-        color: #40b1aa;
+        color: #aae0dd;
         text-decoration: none; }
         .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-          color: #9fa4cb; }
+          color: #c0c3dd; }
     .blog-post .entry-header .entry-meta {
       display: none;
       padding-bottom: 1rem;

@@ -103,6 +103,44 @@ body {
 	    padding: 15px;
 	    border-bottom: 0px solid #e5e5e5;
 	}
+
+	.modal-body {
+
+		.infusion-field {
+			text-align: center;
+
+			label {
+				color: white;
+			}
+		}
+		.infusion-submit {
+			margin-top: 2rem;
+		}
+	}
+	.modal-footer {
+	    padding: 15px;
+	    text-align: center;
+	    border-top: 0px solid #e5e5e5;
+
+	    .btn {
+	    	background-color: transparent;
+	    	border-bottom: 2px solid #e5e5e5;
+	    }
+	}	
+}
+
+
+#myModal-header {
+
+	.modal-content {
+		// background-color: $tiana-teal;
+		@include background(linear-gradient( lighten( $tiana-teal, 10% ), rgba( gray, .7 ) ) left repeat);
+
+	}
+	.modal-header {
+	    padding: 15px;
+	    border-bottom: 0px solid #e5e5e5;
+	}
 	.modal-footer {
 	    padding: 15px;
 	    text-align: center;
@@ -242,6 +280,8 @@ body {
 .navbar {
 	// position: relative;
 	// z-index: 1;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	background-color: $tiana-primary;
 	// background-color: lighten( rgba( $steel, 1 ), 60% );
 	box-shadow: 2px 2px 8px $gray-light;
@@ -258,12 +298,38 @@ body {
 		@media ( max-width: 360px ) {
 			font-size: 1.5rem;
 		}
+
+		.logo-text {
+			font-size: 2.7rem;
+			font-weight: 600;
+
+			.tiana-txt {
+				color: $tiana-teal;
+				&:hover {
+					color: lighten( $tiana-teal, 20% );
+				}
+			}
+			.firefly {
+				font-weight: 400;
+				font-size: 2.3rem;
+				color: lighten( gray, 20% );
+				// border: 1px solid red;
+				// margin-top: -3rem !important;
+				// line-height: 6rem;
+			}
+			.bar {
+				padding-left: 1rem;
+				padding-right: 1rem;
+				font-weight: 200;
+				font-size: 3rem;
+			}
+		}
 	}
 	.navbar-toggle {
-		border: 1px solid $tiana-primary;
+		border: 3px solid lighten( $tiana-teal, 20% );
 		.icon-bar {
-		color: $tiana-primary;
-		background-color: $tiana-primary;
+		color: white;
+		background-color: white;
 
 		}
 	}
@@ -475,6 +541,7 @@ img {
 				color: lighten( $tiana-primary, 0% );
 				// color: lighten( $tiana-gray, 20% );
 				font-style: italic;
+				font-weight: 200;
 			}
 			h3 {
 				color: lighten( $tiana-primary, 10% );
@@ -545,7 +612,7 @@ img {
 						font-size: 1.2rem;
 					}
 					h3 {
-						font-size: 1.6rem;
+						font-size: 1.3rem;
 					}				
 			}				
 				
@@ -651,7 +718,7 @@ img {
 				// display: none;
 				position: absolute;
 				top: 80px;
-				left: 150px;
+				left: 20px;
 					width: 50%;
 					// width: 350px;
 					// height: 230px;
@@ -979,10 +1046,10 @@ img {
 			padding-right: 1rem;
 
 			a {
-				color: darken( $brand-primary, 10% );
+				color: lighten( $brand-primary, 20% );
 				text-decoration: none;
 				&:hover {
-					color: lighten( $tiana-primary, 40% );
+					color: lighten( $tiana-primary, 50% );
 				}
 			}
 
