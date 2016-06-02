@@ -3,8 +3,7 @@ $brand-primary:  #5FC5BF;
 // $brand-primary: #FF6600;
 // $brand-primary: #FF8300;
 // $brand-primary: lighten( #be8706, 10% );
-$tiana-primary: #383D66;
-$tiana-teal: #5FC5BF;
+$tiana-primary: #5FC5BF;
 $tiana-gray: #242424;
 
 
@@ -26,9 +25,7 @@ html {
 
 body {
 
-	// font-family: 'Muli', sans-serif;
-	font-family: 'Raleway', sans-serif;
-	padding-top: 28px;
+	font-family: 'Muli', sans-serif;
 
 }
 
@@ -110,7 +107,6 @@ body {
 
 	    .btn {
 	    	background-color: transparent;
-	    	border-bottom: 2px solid #e5e5e5;
 	    }
 	}	
 }
@@ -240,24 +236,17 @@ body {
 } 
 
 .navbar {
-	// position: relative;
-	// z-index: 1;
-	background-color: $tiana-primary;
-	// background-color: lighten( rgba( $steel, 1 ), 60% );
+	position: relative;
+	z-index: 1;
+	background-color: lighten( rgba( $steel, 1 ), 60% );
 	box-shadow: 2px 2px 8px $gray-light;
 	margin-bottom: 0;
-	font-family: 'Raleway', sans-serif;
-
-	// font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	// background-image: url("http://tiana/wp-content/uploads/2016/01/header-transparent-bg-4.png");
 
 
 	.navbar-brand {
 		color: darken( $gray-lighter, 10% );
-
-		@media ( max-width: 360px ) {
-			font-size: 1.5rem;
-		}
 	}
 	.navbar-toggle {
 		border: 1px solid $tiana-primary;
@@ -301,16 +290,16 @@ body {
 				background-color: lighten( $tiana-primary, 10% );
 			}
 			a {
-				color: darken( $gray-lighter, 15% );
-				font-size: 1.5rem;
+				color: darken( $gray-lighter, 45% );
+				font-size: 1.7rem;
 				font-weight: 500;
 				// border: 1px solid red;
 				&:hover {
-					color: white;
+					color: $tiana-primary;
 				}
 
 				@media ( min-width: 1200px ) {
-					font-size: 2rem;
+					font-size: 2.5rem;
 				}
 			}
 		}
@@ -321,7 +310,7 @@ body {
 
 			a {
 				// background-color: lighten( $gray, 40% );
-				color: lighten( $tiana-primary, 70% );
+				color: darken( $tiana-primary, 0% );
 
 				&:hover {
 					// background-color: lighten( $oil, 10% );
@@ -437,299 +426,179 @@ img {
  */
 #front-pg-header {
 	position: relative;
-	// z-index: -1;
+	z-index: -1;
 	
-	border-bottom: 1rem solid $tiana-primary;
+	// border: 1px solid red;
 	margin-top: -.9rem;
-
-	.header-img-container {
-		// position: relative;
-		position: absolute;
-		top: -50;
-		.header-txt-img {
-
-		}
-	}
 
 	.header-text-container {
 		// box-shadow: 0px 0px 3px lighten( $tiana-gray, 20% );
 
-		.header-text-box {
+		// .header-text-box {
 
-			// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-			// font-family: 'Muli', sans-serif;
-			font-family: 'Raleway', sans-serif;
+		// 	// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		// 	font-family: 'Muli', sans-serif;
+		// 	position: absolute;
+		// 	top: -30px;
+		// 	left: 0px;
 
-			position: absolute;
-			top: -30px;
-			left: 0px;
+		// 	width: 250px;
+		// 	height: 130px;
+		// 	padding-left: 3rem;
+		// 	padding-right: .5rem;
+		// 	padding-top: 2rem;
+		// 	padding-bottom: 2rem;
 
-			width: 250px;
-			height: 130px;
-			padding-left: 3rem;
-			padding-right: .5rem;
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-
-			h4 {
-				color: lighten( $tiana-primary, 0% );
-				// color: lighten( $tiana-gray, 20% );
-				font-style: italic;
-			}
-			h3 {
-				color: lighten( $tiana-primary, 10% );
-				font-size: 1.2rem;
-				font-weight: 700;
-
-			}
-
-			.header-btn-container {
-
-				padding-top: 5rem;
-				text-align: center;
-					@media ( max-width: 1099px ) {
-						padding-top: 2rem;
-					}	
-					@media ( max-width: 450px ) {
-						padding-top: 1rem;
-					}										
-
-				.btn.btn-success {
-					height: 120px;
-					// width: 60%;
-					padding-left: 2rem;
-					padding-right: 2rem;
-					background-color: $tiana-teal;
-					border: none;
-					font-size: 3.5rem;
-
-					&:hover {
-						background-color: darken( $tiana-teal, 10% );
-					}
-
-					@media ( max-width: 1099px ) {
-						font-size: 2.5rem;
-						height: 80px;
-					}
-					@media ( max-width: 560px ) {
-						font-size: 2rem;
-						height: 50px;
-					}
-					@media ( max-width: 450px ) {
-						font-size: 1.2rem;
-						height: 30px;
-					}					
-
-
- 				}
-			}
-
-	
-			@media ( max-width: 499px ) {
-
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		// 	h4 {
+		// 		color: lighten( $tiana-gray, 20% );
+		// 		font-size: 1rem;
+		// 	}
+		// 	h3 {
+		// 		font-size: 1.2rem;
+		// 	}
 				
-					position: absolute;
-					top: 0px;
-					left: 0px;
+		// 	@media ( min-width: 500px ) {
 
-					width: 70%;
-					height: 180px;
-					// padding-left: 3rem;
-					// padding-right: .5rem;
-					padding-top: 2rem;
-					// padding-bottom: 2rem;
-
-					h4 {
-						color: lighten( $tiana-gray, 20% );
-						font-size: 1.2rem;
-					}
-					h3 {
-						font-size: 1.6rem;
-					}				
-			}				
+		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 				
-			@media ( min-width: 500px ) {
+		// 			position: absolute;
+		// 			top: 0px;
+		// 			left: 0px;
 
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-					position: absolute;
-					top: 0px;
-					left: 0px;
+		// 			width: 250px;
+		// 			height: 180px;
+		// 			padding-left: 3rem;
+		// 			padding-right: .5rem;
+		// 			padding-top: 2rem;
+		// 			padding-bottom: 2rem;
 
-					width: 250px;
-					height: 180px;
-					padding-left: 3rem;
-					padding-right: .5rem;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
+		// 			h4 {
+		// 				color: lighten( $tiana-gray, 20% );
+		// 				font-size: 1.2rem;
+		// 			}
+		// 			h3 {
+		// 				font-size: 1.6rem;
+		// 			}				
+		// 	}	
 
-					h4 {
-						color: lighten( $tiana-gray, 20% );
-						font-size: 1.2rem;
-					}
-					h3 {
-						font-size: 1.6rem;
-					}				
-			}	
+		// 	@media ( min-width: 700px ) {
 
-			@media ( min-width: 700px ) {
-
-			// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		// 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 			
-				position: absolute;
-				top: 20px;
-				left: 70px;
+		// 		position: absolute;
+		// 		top: 20px;
+		// 		left: 70px;
 
-				width: 250px;
-				height: 190px;
-				padding-left: 3rem;
-				padding-right: .5rem;
-				padding-top: .6rem;
-				padding-bottom: 2rem;
+		// 		width: 250px;
+		// 		height: 190px;
+		// 		padding-left: 3rem;
+		// 		padding-right: .5rem;
+		// 		padding-top: .6rem;
+		// 		padding-bottom: 2rem;
 
-				h4 {
-					color: lighten( $tiana-gray, 20% );
-					font-size: 1.5rem;
-				}
-				h3 {
-					font-size: 2rem;
-				}				
-			}		
+		// 		h4 {
+		// 			color: lighten( $tiana-gray, 20% );
+		// 			font-size: 1.5rem;
+		// 		}
+		// 		h3 {
+		// 			font-size: 2rem;
+		// 		}				
+		// 	}		
 
-			@media ( min-width: 768px ) {
+		// 	@media ( min-width: 768px ) {
 			
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 				
-				position: absolute;
-				top: 25px;
-				left: 50px;
-					width: 350px;
-					height: 210px;
-					padding-left: 5rem;
-					padding-right: .5rem;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
+		// 		position: absolute;
+		// 		top: 25px;
+		// 		left: 50px;
+		// 			width: 350px;
+		// 			height: 210px;
+		// 			padding-left: 5rem;
+		// 			padding-right: .5rem;
+		// 			padding-top: 2rem;
+		// 			padding-bottom: 2rem;
 
-					h4 {
-						color: lighten( $tiana-gray, 20% );
+		// 			h4 {
+		// 				color: lighten( $tiana-gray, 20% );
 						
-					}
-					h3 {
-						font-size: 2.5rem;
-					}
+		// 			}
+		// 			h3 {
+		// 				font-size: 2.5rem;
+		// 			}
 				
-			}
-			@media ( min-width: 769px ) and ( max-width: 1099px ) {
+		// 	}
+
+		// 	@media ( min-width: 1100px ) {
 			
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 				
-				position: absolute;
-				top: 50px;
-				left: 50px;
-					width: 60%;
-					height: 190px;
-					padding-left: 5rem;
-					padding-right: .5rem;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
+		// 		position: absolute;
+		// 		top: 80px;
+		// 		left: 150px;
+		// 			width: 350px;
+		// 			height: 230px;
+		// 			padding-left: 3rem;
+		// 			padding-right: .5rem;
+		// 			padding-top: 2rem;
+		// 			padding-bottom: 2rem;
 
-					h4 {
-						color: lighten( $tiana-gray, 20% );
-						text-align: center;
-					}
-					h3 {
-						font-size: 2.5rem;
-						text-align: center;
-					}
+		// 			h4 {
+		// 				color: lighten( $tiana-gray, 20% );
+
+		// 			}
 				
-			}			
+		// 	}
 
-			@media ( min-width: 1100px ) {
+		// 	@media ( min-width: 1400px ) {
 			
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				// display: none;
-				position: absolute;
-				top: 80px;
-				left: 150px;
-					width: 50%;
-					// width: 350px;
-					// height: 230px;
-					padding-left: 3rem;
-					padding-right: .5rem;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
-
-					h4 {
-						color: lighten( $tiana-primary, 20% );
-						text-align: center;	
-						font-size: 2.2rem;
-					}
-					h3 {
-						text-align: center;	
-						font-size: 3.3rem;
-					}
+		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 				
-			}
+		// 		position: absolute;
+		// 		top: 80px;
+		// 		left: 150px;
+		// 			width: 450px;
+		// 			height: 300px;
+		// 			padding-left: 5rem;
+		// 			padding-right: .5rem;
+		// 			padding-top: 2rem;
+		// 			padding-bottom: 2rem;
 
-			@media ( min-width: 1400px ) {
-			
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				// display: none;
-				position: absolute;
-				top: 80px;
-				left: 150px;
-					width: 50%;
-					// width: 450px;
-					// height: 300px;
-					// padding-left: 5rem;
-					// padding-right: .5rem;
-					padding-top: 2rem;
-					padding-bottom: 2rem;
+		// 			h4 {
+		// 				color: lighten( $tiana-gray, 20% );
+		// 				font-size: 2rem;
 
-					h4 {
-						font-size: 2rem;
-						text-align: center;	
-						color: lighten( $tiana-primary, 10% );
-							
-					}
-					h3 {
-						font-size: 4rem;
-						text-align: center;	
-
-					}
+		// 			}
+		// 			h3 {
+		// 				font-size: 3rem;
+		// 			}
 				
-			}
+		// 	}
 
-			@media ( min-width: 1600px ) {
+		// 	@media ( min-width: 1600px ) {
 	
-				// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				position: absolute;
-				top: 120px;
-				left: 100px;
-					width: 50%;
-					// width: 550px;
-					// height: 100%;
-					// height: 330px;
-					padding-left: 5rem;
-					padding-right: .5rem;
-					padding-top: 3rem;
-					padding-bottom: 2rem;
+		// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+		
+		// 		position: absolute;
+		// 		top: 120px;
+		// 		left: 250px;
+		// 			width: 550px;
+		// 			height: 330px;
+		// 			padding-left: 8rem;
+		// 			padding-right: .5rem;
+		// 			padding-top: 3rem;
+		// 			padding-bottom: 2rem;
 
-					h4 {
-						color: lighten( $tiana-primary, 10% );
-						font-size: 2.6rem;
-						font-weight: 300;
-						text-align: center;	
-					}
-					h3 {
-						font-size: 5rem;
-						text-align: center;	
-						padding-bottom: 2rem;
+		// 			h4 {
+		// 				color: lighten( $tiana-gray, 20% );
+		// 				font-size: 2.5rem;
 
-					}
-			}
-		}	
+		// 			}
+		// 			h3 {
+		// 				font-size: 3.5rem;
+		// 			}
+		// 	}
+		// }	
 	}
 } 
 
@@ -738,85 +607,85 @@ img {
  * Header form style
  *
  */
-// .header-form-section {
-// 	padding-top: 2rem;
-// 	padding-bottom: 3rem;
-// 	background-color: $tiana-primary;
-// 	border-top: 1rem solid $tiana-gray;
-// 	// height: 21.5rem;
+.header-form-section {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	background-color: $tiana-primary;
+	border-top: 1rem solid $tiana-gray;
+	// height: 21.5rem;
 
-// 	.header-form-text {
+	.header-form-text {
 		
-// 		text-align: center;
+		text-align: center;
 
-// 		h4 {
-// 			color: white;
-// 			font-size: 3rem;
-// 			font-weight: 500;
-// 			padding-left: 6rem;
+		h4 {
+			color: white;
+			font-size: 3rem;
+			font-weight: 500;
+			padding-left: 6rem;
 
-// 			@media ( max-width: 991px ) {
-// 				padding-bottom: 3rem;
-// 				padding-left: 0rem;
-// 			}
+			@media ( max-width: 991px ) {
+				padding-bottom: 3rem;
+				padding-left: 0rem;
+			}
 
-// 		}
-// 	}
+		}
+	}
 
 
-// 	.header-form-container {
+	.header-form-container {
 	
-// 		padding-top: 2rem;
+		padding-top: 2rem;
 
-// 		.btn {
-// 			padding-top: 3rem;
-// 			padding-bottom: 3rem;
-// 			border-radius: 20px;
-// 			font-weight: 700;
-// 			font-size: 2.8rem;
-// 			color: darken( white, 10% );
-// 			// color: darken( white, 10% );
+		.btn {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			border-radius: 20px;
+			font-weight: 700;
+			font-size: 2.8rem;
+			color: darken( white, 10% );
+			// color: darken( white, 10% );
 
-// 			@media ( min-width: 992px ) and ( max-width: 1250px ) {
+			@media ( min-width: 992px ) and ( max-width: 1250px ) {
 
-// 				font-size: 2rem;
-// 			}
+				font-size: 2rem;
+			}
 
-// 			@media ( max-width: 430px ) {
+			@media ( max-width: 430px ) {
 
-// 				font-size: 1.5rem;
-// 			}
-// 		}
+				font-size: 1.5rem;
+			}
+		}
 
 
-// 		// label {
-// 		// 	color: white;
-// 		// 	font-weight: 500;
-// 		// 	padding-right: 3rem;
-// 		// 	padding-top: 1.2rem;
+		// label {
+		// 	color: white;
+		// 	font-weight: 500;
+		// 	padding-right: 3rem;
+		// 	padding-top: 1.2rem;
 
-// 		// 	@media screen and ( max-width: 400px ) {
-// 		// 	}			
-// 		// }
-// 		// input {
-// 		// 	margin-top: 1.2rem;
-// 		// 	width: 60%;
-// 		// 	@media screen and ( max-width: 480px ) {
-// 		// 		width: 100%;
-// 		// 	}	
-// 		// }
-// 		// .infusion-submit {
-// 		// 	input {
-// 		// 		border: 2px solid white;
-// 		// 		background-color: black;
-// 		// 		color: white;
-// 		// 		padding: .5rem;
-// 		// 		border-radius: 20px;
-// 		// 		margin-bottom: 1.5rem;
-// 		// 	}
-// 		// }
-// 	}
-// }
+		// 	@media screen and ( max-width: 400px ) {
+		// 	}			
+		// }
+		// input {
+		// 	margin-top: 1.2rem;
+		// 	width: 60%;
+		// 	@media screen and ( max-width: 480px ) {
+		// 		width: 100%;
+		// 	}	
+		// }
+		// .infusion-submit {
+		// 	input {
+		// 		border: 2px solid white;
+		// 		background-color: black;
+		// 		color: white;
+		// 		padding: .5rem;
+		// 		border-radius: 20px;
+		// 		margin-bottom: 1.5rem;
+		// 	}
+		// }
+	}
+}
 
 
 /**
@@ -900,13 +769,12 @@ img {
 
 		// padding-top: 3rem;
 		// padding-bottom: 3rem;
-		border: 1px solid red;
+		// border: 1px solid red;
 
 		h1 {
 			// font-family: 'Bevan', cursive;
 			// font-variant: small-caps;
-			// padding-left: 1.8rem;
-			text-align: center;
+			padding-left: 1.8rem;
 			font-size: 3rem;
 			color: darken( $tiana-primary, 0% );
 		}
@@ -949,11 +817,10 @@ img {
 	margin-top: 5rem;
 	margin-right: 0rem;
 	margin-left: .15rem;
-	font-family: 'Raleway', sans-serif;
-	
+
 	.entry-header {
-		// @include background(radial-gradient( rgba( $ghost, .8 ), rgba( $tiana-primary, .9 ) ) left repeat);
-		background-color: rgba( darken( $tiana-primary, 0% ), .9);
+		@include background(radial-gradient( rgba( $ghost, .8 ), rgba( $tiana-primary, .9 ) ) left repeat);
+		// background-color: rgba( darken( $gray-light, 50% ), .65);
 		// box-shadow: 2px 2px 4px $gray-light;
 
 		// margin-bottom: 2.5rem;
@@ -966,10 +833,8 @@ img {
 		h1, h2 {
 			// font-family: 'Lora', serif;
 			// font-family: 'Cabin', sans-serif;
-			// font-family: 'Muli', sans-serif;
-			font-family: 'Raleway', sans-serif;
-			text-transform: uppercase;
-			
+			font-family: 'Muli', sans-serif;
+
 			font-size: 3.2rem;
 			// font-variant: small-caps;
 			font-weight: 200;
@@ -982,7 +847,7 @@ img {
 				color: darken( $brand-primary, 10% );
 				text-decoration: none;
 				&:hover {
-					color: lighten( $tiana-primary, 40% );
+					color: lighten( $oil, 20% );
 				}
 			}
 
@@ -1036,9 +901,7 @@ img {
 		padding-top: 2rem;
 		p {
 			// font-family: 'Poiret One', cursive;
-			// font-family: 'Muli', sans-serif;
-			font-family: 'Raleway', sans-serif;
-
+			font-family: 'Muli', sans-serif;
 			font-size: 2rem;
 			font-variant: 300;
 			color: lighten( $tiana-gray, 25% );
@@ -1130,16 +993,14 @@ img {
 
 
 	.entry-header {
-			// border: 1px solid red;
-
-		h1 {
-			font-family: 'Raleway', sans-serif;
+		h2 {
+			font-family: 'Bevan', cursive;
 			font-variant: small-caps;
 			font-size: 4rem;
 			color: darken( $brand-primary, 10% );
 			padding-bottom: 1rem;
 			padding-right: 2rem;
-			text-align: center !important;
+			// border: 1px solid red;
 		}
 	}
 
@@ -1218,17 +1079,17 @@ img {
 		
 		.praise-text {
 			p {
-				color: lighten( $tiana-primary, 55% );
+				color: lighten( $tiana-primary, 35% );
 				
 			}
 			h3 {
-				color: lighten( $gray-lighter, 50% );
+				color: lighten( $gray-lighter, 10% );
 			}
 		}
 		.praise-title {
 			color: white;
 			a {
-				color: $tiana-teal;
+				color: $tiana-primary;
 			}
 		}
 	}
@@ -1339,13 +1200,13 @@ img {
 
 				a {
 					font-size: 2rem;
-					color: $tiana-teal;
+					color: $tiana-primary;
 				}
 				
 			}
 			p {
 				font-size: 2.5rem;
-				color: $tiana-teal;
+				color: $tiana-primary;
 				padding-top: 2rem;
 			}		
 		}
@@ -1462,10 +1323,10 @@ img {
 	padding-right: 2rem;
 
 	// background-color: rgba( lighten( $gray-light, 15% ), .7);
-	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $silver, .1 ) ) left repeat);
+	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 
-	// font-family: 'Muli', sans-serif;
-
+	font-family: 'Muli', sans-serif;
+	
 
 	.widget-title {
 		font-size: 3rem;
@@ -1473,10 +1334,6 @@ img {
 		font-variant: small-caps;
 		color: lighten( $tiana-gray, 40% );
 		padding-bottom: 2rem;
-		text-transform: uppercase;
-		font-family: 'Raleway', sans-serif;
-
-
 	}
 
 	.srp-post-content {
@@ -1524,8 +1381,6 @@ img {
 			font-size: 1.5rem;
 			padding: 1rem;
 			font-weight: 300;
-			font-family: 'Raleway', sans-serif;
-			
 			@include transition(all 0.5s ease-in-out);
 
 			&:hover {
@@ -1539,7 +1394,7 @@ img {
 				color: darken( $tiana-gray , 10%);
 				// font-family: 'Muli', sans-serif;
 				font-size: 2rem;
-				// font-variant: small-caps;
+				font-variant: small-caps;
 				&:hover {
 					text-decoration: none;
 					color: $gray-lighter;
@@ -1908,7 +1763,6 @@ ol.children { list-style-type: none; }
     background: hsl(100, 39%, 57%);
 }
                 
-
 
 
 

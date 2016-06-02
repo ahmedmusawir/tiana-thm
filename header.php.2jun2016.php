@@ -32,11 +32,38 @@
 			    $siteLogo = get_field('site_logo', 6); // 1476 is post id                               
 			    $size = 'full'; // (thumbnail, medium, large, full or custom size)
 			?>
+
+			<style type="text/css" media="screen">
+				
+				.header-logo-social {
+					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg");
+					/*background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");*/
+				}
+				.navbar {
+					background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-bg.jpg");
+					/*background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png");*/
+				}
+
+			</style>
+			<div class="logo-container col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+	        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo $siteLogo;  ?>" alt=""></a>
+	      	</div>
+	      	<div class="header-social-container hidden-xs col-sm-6 col-md-6 col-lg-6">
+	      		<ul class="header-social pull-right">
+					<li><a target="_blank" href="https://www.facebook.com/tianagustafson/?fref=ts"><i class="fa fa-facebook fa-2x"></i></a></li>				
+					<li><a target="_blank" href="https://www.instagram.com/freedom_planner/"><i class="fa fa-instagram fa-2x"></i></a></li>				
+					<li><a target="_blank" href="https://www.pinterest.com/tianastar/"><i class="fa fa-pinterest fa-2x"></i></a></li>				
+					<!-- <li><a href="#"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/contact_periscope.png" alt=""></a></li>				 -->
+					<li><a target="_blank" href="https://www.youtube.com/user/coffeeshopgrrrl "><i class="fa fa-youtube fa-2x"></i></a></li>				
+					<li><a target="_blank" href="https://www.linkedin.com/in/tianastar"><i class="fa fa-linkedin fa-2x"></i></a></li>				
+				</ul>
+	      	</div>
+		
 		</div>
 
 	
 		<div class="navbar-container">
-			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<nav class="navbar navbar-inverse-not navbar-fixed-top-not" role="navigation">
 	
 	  		  <div class="container-fluid">
 
@@ -49,7 +76,6 @@
 			            <span class="icon-bar"></span>
 			        </button>
 			    <!-- <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="logo" src="http://tiana/wp-content/uploads/2016/01/TianaGustafsonLogo.png" alt=""></a> -->
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="logo-text"><span class="tiana-txt">TIANA</span> GUSTAFSON  |  firefly media</span></a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,33 +110,6 @@
 		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
 			<img class="img-responsive" src="<?php echo $front_header_image; ?>" alt="tiana img">
 
-			<!-- <div class="header-img-container">
-				<div class="col-md-7 col-lg-7">
-					<img class="header-txt-img" src="/wp-content/uploads/2016/06/header-text-img.jpg" alt="">
-				</div>
-			</div> -->
-			<div class="header-text-container">
-
-				<article class="header-text-box">
-					<!-- <img class="header-txt-img img-responsive" src="/wp-content/uploads/2016/06/header-text-img.jpg" alt=""> -->
-
-					<h3>ONLINE MARKETING MAKE EASY.</h3>
-					<h4>
-						Join Thousands of other Entrepreneurs and get
-						Instant Access to our Online Marketing Resources.
-					</h4>
-
-					<article class="header-btn-container block-center">
-					
-						<button type="button" class="btn btn-success btn-lg " data-toggle="modal" data-target="#myModal">
-						  CLICK HERE TO SIGN UP!
-						</button>
-				
-					</article>
-
-
-				</article>			
-			</div>	
 			
 		<?php else : ?>
 			<img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img">
@@ -118,7 +117,7 @@
 	
 
 	</header>
-<!-- 	<section class="header-form-section">
+	<section class="header-form-section">
 
 		<div class="header-form-container container-fluid">
 			<div class="col-md-8">
@@ -132,7 +131,8 @@
 			<div class="col-md-4">
 				
 				<article class="form-container">
-					
+
+					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
 					  CLICK HERE TO SIGN UP!
 					</button>
@@ -142,7 +142,7 @@
 			</div>
 			
 	</section>
- -->
+
 
 <!-- THE MODAL CODE -->
 	<!-- Modal -->

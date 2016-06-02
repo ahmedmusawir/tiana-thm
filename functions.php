@@ -230,6 +230,42 @@ function tweakjp_rm_comments_att( $open, $post_id ) {
 }
 add_filter( 'comments_open', 'tweakjp_rm_comments_att', 10 , 2 );
 
+/**
+ *
+ * Adding data attributes to Menu bar item ID menu-item-2912
+ * Use only the number at the end.
+ *
+ */
+
+add_filter( 'nav_menu_link_attributes', 'my_menu_atts', 10, 3 );
+function my_menu_atts( $atts, $item, $args )
+{
+  // Provide the id of the targeted menu item
+  $menu_target = 2912;
+
+  // inspect $item
+
+  if ($item->ID == $menu_target) {
+    $atts['data-toggle'] = 'modal';
+    $atts['data-target'] = '#myModal';
+  }
+  return $atts;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
