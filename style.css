@@ -5925,6 +5925,9 @@ button.close {
 body {
   font-family: 'Raleway', sans-serif;
   padding-top: 28px; }
+  @media (max-width: 400px) {
+    body {
+      padding-top: 50px; } }
 
 /**
  *
@@ -6104,25 +6107,34 @@ body {
   font-family: 'Raleway', sans-serif; }
   .navbar .navbar-brand {
     color: #d5d5d5; }
-    @media (max-width: 360px) {
-      .navbar .navbar-brand {
-        font-size: 1.5rem; } }
     .navbar .navbar-brand .logo-text {
       font-size: 2.7rem;
       font-weight: 600; }
+      @media (max-width: 503px) {
+        .navbar .navbar-brand .logo-text {
+          font-size: 1.5rem; } }
       .navbar .navbar-brand .logo-text .tiana-txt {
         color: #5FC5BF; }
         .navbar .navbar-brand .logo-text .tiana-txt:hover {
           color: #aae0dd; }
+        @media (max-width: 503px) {
+          .navbar .navbar-brand .logo-text .tiana-txt {
+            font-size: 1.5rem; } }
       .navbar .navbar-brand .logo-text .firefly {
         font-weight: 400;
         font-size: 2.3rem;
         color: #b3b3b3; }
+        @media (max-width: 503px) {
+          .navbar .navbar-brand .logo-text .firefly {
+            font-size: 1rem; } }
       .navbar .navbar-brand .logo-text .bar {
         padding-left: 1rem;
         padding-right: 1rem;
         font-weight: 200;
         font-size: 3rem; }
+        @media (max-width: 503px) {
+          .navbar .navbar-brand .logo-text .bar {
+            font-size: 1.5rem; } }
   .navbar .navbar-toggle {
     border: 3px solid #aae0dd; }
     .navbar .navbar-toggle .icon-bar {
